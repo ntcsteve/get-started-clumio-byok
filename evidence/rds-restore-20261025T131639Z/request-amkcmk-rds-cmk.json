@@ -1,0 +1,23 @@
+{
+  "source": {
+    "backup": {
+      "backup_id": "ea388764-d071-11f1-8e4a-1aeee14fc2e6_2026-10-25T12:50:53Z_RdsRollingBackup_4043795565"
+    }
+  },
+  "target": {
+    "environment_id": "33333333-3333-3333-3333-333333333333",
+    "name": "amkcmk-rds-cmk-r1",
+    "instance_class": "db.t4g.micro",
+    "is_publicly_accessible": false,
+    "subnet_group_name": "default",
+    "security_group_native_ids": [
+      "sg-07374a4db8b066f44"
+    ],
+    "tags": [
+      {
+        "key": "exp",
+        "value": "amkcmk"
+      }
+    ]
+  }
+}

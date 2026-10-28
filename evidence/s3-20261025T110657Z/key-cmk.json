@@ -1,0 +1,5 @@
+{
+    "Arn": "arn:aws:kms:ap-southeast-2:111111111111:key/5053049c-e4ad-4221-9690-bee3f1fbaf40",
+    "KeyManager": "CUSTOMER",
+    "KeyState": "Enabled"
+}

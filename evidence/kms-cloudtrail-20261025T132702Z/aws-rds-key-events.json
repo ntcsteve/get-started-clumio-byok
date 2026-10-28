@@ -1,0 +1,856 @@
+[
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T13:02:07Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "ListResourceTags",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/E,C,b,AD,Z,AC cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.list-resource-tags",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "responseElements": null,
+    "requestID": "a1b4a853-d57b-4b67-b208-c8540734b9e8",
+    "eventID": "7151b796-64c7-4a71-b4ba-9b8030ae0585",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T13:02:06Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "ListAliases",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/AD,AC,E,C,b,Z cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.list-aliases",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "responseElements": null,
+    "requestID": "8c83ca1f-4300-44b2-a382-bd949bb6173f",
+    "eventID": "12db9ada-8b66-4789-8bd4-b348cdc96e9e",
+    "readOnly": true,
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T13:02:02Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "DescribeKey",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/b,AC,Z,AD,E cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.describe-key",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "responseElements": null,
+    "requestID": "5dcb88d7-8ea6-4b80-b3ed-71064d5cfee9",
+    "eventID": "1f57bc36-7c18-4717-b50a-6c8ada059575",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:Denali-createRDSCustomerSession",
+      "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/Denali-createRDSCustomerSession",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAXXXXXXXXXXXXXXXXX",
+          "arn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+          "accountId": "111111111111",
+          "userName": "amkcmk-ClumioIAMRole-ase-2"
+        },
+        "attributes": {
+          "creationDate": "2026-10-25T12:58:04Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "eventTime": "2026-10-25T13:01:15Z",
+    "eventSource": "rds.amazonaws.com",
+    "eventName": "DeleteDBSnapshot",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "APN/1.0 Commvault/1.0 CDF/1.0 APN_1.1/pc_2ny70dnijzyz2rzi9fdofo2ux$ aws-sdk-go-v2/1.47.3 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/rds#1.130.3 m/i",
+    "requestParameters": {
+      "dBSnapshotIdentifier": "clumio-airgap-to-encrypt-t4043795459-org00000000000000000"
+    },
+    "responseElements": {
+      "dBSnapshotIdentifier": "clumio-airgap-to-encrypt-t4043795459-org00000000000000000",
+      "dBInstanceIdentifier": "amkcmk-rds-amk",
+      "snapshotCreateTime": "2026-10-25T12:50:59Z",
+      "engine": "postgres",
+      "allocatedStorage": 20,
+      "status": "deleted",
+      "port": 5432,
+      "availabilityZone": "ap-southeast-2a",
+      "vpcId": "vpc-0ad7c042315c2c747",
+      "instanceCreateTime": "2026-10-25T12:41:10Z",
+      "masterUsername": "labadmin",
+      "engineVersion": "18.3",
+      "licenseModel": "postgresql-license",
+      "snapshotType": "manual",
+      "storageThroughput": 0,
+      "optionGroupName": "default:postgres-18",
+      "percentProgress": 100,
+      "storageType": "gp2",
+      "encrypted": true,
+      "backupRetentionPeriod": 1,
+      "preferredBackupWindow": "13:35-14:05",
+      "kmsKeyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7",
+      "dBSnapshotArn": "arn:aws:rds:ap-southeast-2:111111111111:snapshot:clumio-airgap-to-encrypt-t4043795459-org00000000000000000",
+      "iAMDatabaseAuthenticationEnabled": false,
+      "processorFeatures": [],
+      "dbiResourceId": "db-DNF3ILUWHIR35WT6AXO2B6OCKI",
+      "tagList": [],
+      "snapshotTarget": "region",
+      "originalSnapshotCreateTime": "2026-10-25T12:50:59Z",
+      "dedicatedLogVolume": false
+    },
+    "requestID": "9545af2b-d5d1-4b43-a869-7dc898cb2a46",
+    "eventID": "8ffe8bac-a9d3-477c-81e0-0528c5ec8df2",
+    "readOnly": false,
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "rds.ap-southeast-2.amazonaws.com"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T12:59:35Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "ListResourceTags",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/E,AD,b,C,Z,AC cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.list-resource-tags",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "responseElements": null,
+    "requestID": "7036dfaf-2388-4d72-ba85-cc738a7158a8",
+    "eventID": "f5f6e457-47e3-4d72-a63d-c3cdeeaa222c",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T12:59:34Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "ListAliases",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/E,Z,AC,C,b,AD cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.list-aliases",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "responseElements": null,
+    "requestID": "d8b3e53e-a484-40bf-ac1d-859f04528aed",
+    "eventID": "d712ee52-164a-4d54-b6fb-115c3110467e",
+    "readOnly": true,
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T12:59:30Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "DescribeKey",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/AD,Z,AC,E,b cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.describe-key",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "responseElements": null,
+    "requestID": "fd4f809f-552c-4fe0-8cf3-6b506757179b",
+    "eventID": "378e7a7b-36b9-418d-97c9-f76761a26167",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "rds.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T12:57:23Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "GenerateDataKey",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "rds.amazonaws.com",
+    "requestParameters": {
+      "numberOfBytes": 32,
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7",
+      "encryptionContext": {
+        "aws:rds:db-id": "db-DNF3ILUWHIR35WT6AXO2B6OCKI"
+      }
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "keyMaterialId": "ad79bb048263cc5b6dfa1eb461da8a6578c63d9e96db747822bea79d04645a68"
+    },
+    "requestID": "b12e4c2a-a07f-42be-ad92-11e50e045d2f",
+    "eventID": "f85dca24-ba89-3012-8dca-c8f033ce8383",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "e2c06e8e-825b-4340-83f9-98903b7b2a8d",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T12:57:22Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "ListResourceTags",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/C,Z,b,E,AD,AC cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.list-resource-tags",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "responseElements": null,
+    "requestID": "bd648158-9769-472b-a629-2954fb6b237d",
+    "eventID": "5635afa4-2bf6-4018-b70c-238a9f839e0d",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T12:57:21Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "ListAliases",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/b,C,AC,E,AD,Z cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.list-aliases",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "responseElements": null,
+    "requestID": "c2e04afc-6d39-43ff-8209-f908dc25c192",
+    "eventID": "16dd59ee-f38a-40a7-b32d-edc8ab8a1f0d",
+    "readOnly": true,
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T12:57:20Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "DescribeKey",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/b,AD,AC,E,Z cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.describe-key",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "responseElements": null,
+    "requestID": "3bb73ff5-dca0-42d1-bffc-c1195c66ed4c",
+    "eventID": "f064fcad-99e7-467d-9ecb-c6ea6c7107bd",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "rds.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T12:56:39Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "RetireGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "rds.amazonaws.com",
+    "requestParameters": null,
+    "responseElements": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "additionalEventData": {
+      "grantId": "9c7fe8dc72b3bf9b296a269e0294d2f155266eb62bdf945a0eb35313fcfdeb2b"
+    },
+    "requestID": "bcb4da59-9476-439d-bf7f-809ab589f36e",
+    "eventID": "731e35aa-d92d-3adf-9870-7216bdbbe115",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "9c2eb583-e531-432a-91df-0d60de48a47a",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "prod.kms-caller.ebs.ap-southeast-2.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T12:55:39Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "Decrypt",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "prod.kms-caller.ebs.ap-southeast-2.amazonaws.com",
+    "requestParameters": {
+      "encryptionAlgorithm": "SYMMETRIC_DEFAULT",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7",
+      "encryptionContext": {
+        "aws:rds:db-id": "db-DNF3ILUWHIR35WT6AXO2B6OCKI",
+        "aws:ebs:id": "vol-0cdd3a8a32bba9304"
+      }
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "keyMaterialId": "ad79bb048263cc5b6dfa1eb461da8a6578c63d9e96db747822bea79d04645a68"
+    },
+    "requestID": "b38150fb-e4fc-4f04-ac9c-81e8c6d34085",
+    "eventID": "41148620-1f6b-334f-b527-15493371b3c7",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "6429947a-1f11-42cc-91a8-fee10f2db41d",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "prod.kms-caller.ebs.ap-southeast-2.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T12:55:39Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "RetireGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "prod.kms-caller.ebs.ap-southeast-2.amazonaws.com",
+    "requestParameters": null,
+    "responseElements": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "additionalEventData": {
+      "grantId": "753a4cddc44ed4d7da4022f6f9a289c89a5159a443a1a60629141e7494061527"
+    },
+    "requestID": "19b3f035-f909-4da7-a161-e1608149ddd2",
+    "eventID": "44546b66-ca69-3c17-be3a-3bb049370a31",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "bfe4cfa4-47be-4df8-a555-066e0c8a33c8",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "prod.kms-caller.ebs.ap-southeast-2.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T12:55:39Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "prod.kms-caller.ebs.ap-southeast-2.amazonaws.com",
+    "requestParameters": {
+      "retiringPrincipal": "ec2.ap-southeast-2.amazonaws.com",
+      "constraints": {
+        "encryptionContextEquals": {
+          "aws:rds:db-id": "db-DNF3ILUWHIR35WT6AXO2B6OCKI",
+          "aws:ebs:id": "vol-0cdd3a8a32bba9304"
+        }
+      },
+      "granteePrincipal": "ec2.ap-southeast-2.amazonaws.com",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7",
+      "operations": [
+        "Decrypt"
+      ]
+    },
+    "responseElements": {
+      "grantId": "753a4cddc44ed4d7da4022f6f9a289c89a5159a443a1a60629141e7494061527",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "requestID": "e21e0678-c450-4c96-88b6-eaac190b6307",
+    "eventID": "d8f11e3d-1077-342b-966d-325b83c62b7f",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "51c12f4f-4518-4033-a23d-cf990e9f273a",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:Denali-createRDSCustomerSession",
+      "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/Denali-createRDSCustomerSession",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAXXXXXXXXXXXXXXXXX",
+          "arn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+          "accountId": "111111111111",
+          "userName": "amkcmk-ClumioIAMRole-ase-2"
+        },
+        "attributes": {
+          "creationDate": "2026-10-25T12:50:53Z",
+          "mfaAuthenticated": "false"
+        }
+      },
+      "invokedBy": "rds.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T12:55:31Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "rds.amazonaws.com",
+    "requestParameters": {
+      "retiringPrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "operations": [
+        "Decrypt",
+        "CreateGrant",
+        "DescribeKey"
+      ],
+      "constraints": {
+        "encryptionContextSubset": {
+          "aws:rds:db-id": "db-DNF3ILUWHIR35WT6AXO2B6OCKI"
+        }
+      },
+      "granteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "responseElements": {
+      "grantId": "9c7fe8dc72b3bf9b296a269e0294d2f155266eb62bdf945a0eb35313fcfdeb2b",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    "requestID": "b62dafd7-342f-48ba-a0cc-355a7cc79081",
+    "eventID": "66bdc7bc-f921-4727-9fc0-c6b34bcb6428",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:Denali-createRDSCustomerSession",
+      "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/Denali-createRDSCustomerSession",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAXXXXXXXXXXXXXXXXX",
+          "arn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+          "accountId": "111111111111",
+          "userName": "amkcmk-ClumioIAMRole-ase-2"
+        },
+        "attributes": {
+          "creationDate": "2026-10-25T12:50:52Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "eventTime": "2026-10-25T12:50:57Z",
+    "eventSource": "rds.amazonaws.com",
+    "eventName": "CreateDBSnapshot",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "APN/1.0 Commvault/1.0 CDF/1.0 APN_1.1/pc_2ny70dnijzyz2rzi9fdofo2ux$ aws-sdk-go-v2/1.47.3 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/rds#1.130.3 m/i",
+    "requestParameters": {
+      "dBSnapshotIdentifier": "clumio-airgap-to-encrypt-t4043795459-org00000000000000000",
+      "dBInstanceIdentifier": "amkcmk-rds-amk",
+      "tags": [
+        {
+          "key": "clumio.rds.snapshot.tag",
+          "value": "T4043795459Org96122681694783822"
+        },
+        {
+          "key": "Vendor",
+          "value": "Clumio"
+        },
+        {
+          "key": "OrgID",
+          "value": "96122681694783822"
+        },
+        {
+          "key": "UseCase",
+          "value": "RDS"
+        },
+        {
+          "key": "Name",
+          "value": "amkcmk-rds-amk"
+        }
+      ]
+    },
+    "responseElements": {
+      "dBSnapshotIdentifier": "clumio-airgap-to-encrypt-t4043795459-org00000000000000000",
+      "dBInstanceIdentifier": "amkcmk-rds-amk",
+      "engine": "postgres",
+      "allocatedStorage": 20,
+      "status": "creating",
+      "port": 5432,
+      "availabilityZone": "ap-southeast-2a",
+      "vpcId": "vpc-0ad7c042315c2c747",
+      "instanceCreateTime": "2026-10-25T12:41:10Z",
+      "masterUsername": "labadmin",
+      "engineVersion": "18.3",
+      "licenseModel": "postgresql-license",
+      "snapshotType": "manual",
+      "storageThroughput": 0,
+      "optionGroupName": "default:postgres-18",
+      "percentProgress": 0,
+      "storageType": "gp2",
+      "encrypted": true,
+      "backupRetentionPeriod": 1,
+      "preferredBackupWindow": "13:35-14:05",
+      "kmsKeyId": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7",
+      "dBSnapshotArn": "arn:aws:rds:ap-southeast-2:111111111111:snapshot:clumio-airgap-to-encrypt-t4043795459-org00000000000000000",
+      "iAMDatabaseAuthenticationEnabled": false,
+      "processorFeatures": [],
+      "dbiResourceId": "db-DNF3ILUWHIR35WT6AXO2B6OCKI",
+      "tagList": [
+        {
+          "key": "OrgID",
+          "value": "96122681694783822"
+        },
+        {
+          "key": "UseCase",
+          "value": "RDS"
+        },
+        {
+          "key": "Vendor",
+          "value": "Clumio"
+        },
+        {
+          "key": "clumio.rds.snapshot.tag",
+          "value": "T4043795459Org96122681694783822"
+        },
+        {
+          "key": "Name",
+          "value": "amkcmk-rds-amk"
+        }
+      ],
+      "snapshotTarget": "region",
+      "dedicatedLogVolume": false
+    },
+    "requestID": "ff7c4569-d873-4573-9180-9928c4df6f7a",
+    "eventID": "532b1cb8-b46a-4979-b842-55a563098171",
+    "readOnly": false,
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "rds.ap-southeast-2.amazonaws.com"
+    }
+  }
+]

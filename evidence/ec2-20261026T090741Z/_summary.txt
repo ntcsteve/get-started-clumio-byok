@@ -1,0 +1,11 @@
+UTC 2026-10-26T09:07:42Z  account 111111111111  region ap-southeast-2
+amkcmk-ec2-amk: running, root volume encrypted=true, key manager=AWS, alias=alias/aws/ebs | Clumio sees it: yes | backups: 1
+amkcmk-ec2-cmk: running, root volume encrypted=true, key manager=CUSTOMER, alias=none | Clumio sees it: yes | backups: 1
+SETUP: OK
+Clumio task 4047428252 aws_ec2_instance_backup_indexing completed 100% (instance i-0ba7b1f914b8438c9)
+Clumio task 4047398635 aws_ec2_instance_backup_seeding completed 100% (instance i-0ba7b1f914b8438c9)
+Clumio task 4047429609 aws_ec2_instance_backup_indexing completed 100% (instance i-0c6e73e9c1098023f)
+Clumio task 4047398686 aws_ec2_instance_backup_seeding completed 100% (instance i-0c6e73e9c1098023f)
+Clumio snapshots in the account: 2 (tagged Vendor=Clumio)
+Calls that did not succeed:
+  none

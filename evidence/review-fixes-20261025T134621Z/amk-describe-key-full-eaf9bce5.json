@@ -1,0 +1,21 @@
+{
+    "KeyMetadata": {
+        "AWSAccountId": "111111111111",
+        "KeyId": "eaf9bce5-7b16-453e-9d05-7ee9f0826eff",
+        "Arn": "arn:aws:kms:ap-southeast-2:111111111111:key/eaf9bce5-7b16-453e-9d05-7ee9f0826eff",
+        "CreationDate": "2026-10-01T22:24:45.589000+08:00",
+        "Enabled": true,
+        "Description": "Default key that protects my S3 objects when no other key is defined",
+        "KeyUsage": "ENCRYPT_DECRYPT",
+        "KeyState": "Enabled",
+        "Origin": "AWS_KMS",
+        "KeyManager": "AWS",
+        "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
+        "KeySpec": "SYMMETRIC_DEFAULT",
+        "EncryptionAlgorithms": [
+            "SYMMETRIC_DEFAULT"
+        ],
+        "MultiRegion": false,
+        "CurrentKeyMaterialId": "b244619e2cd52cac066b33c36f3f0b086ce159a3bb50e40dbfefe42bd89a2edf"
+    }
+}

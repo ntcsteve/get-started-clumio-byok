@@ -1,0 +1,7 @@
+{
+    "Id": "vol-050342df86ecac887",
+    "Encrypted": true,
+    "KmsKeyId": "arn:aws:kms:ap-southeast-2:111111111111:key/e8e3ab17-dd45-4621-9916-72e7927110aa",
+    "Size": 8,
+    "State": "in-use"
+}

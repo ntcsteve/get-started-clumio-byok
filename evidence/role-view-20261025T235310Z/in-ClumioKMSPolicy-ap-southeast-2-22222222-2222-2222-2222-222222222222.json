@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*",
+                "kms:Encrypt",
+                "kms:DescribeKey",
+                "kms:Decrypt"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:kms:*:*:key/*",
+            "Sid": "RequiredKmsActions"
+        }
+    ]
+}

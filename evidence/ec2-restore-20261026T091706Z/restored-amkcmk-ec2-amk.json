@@ -1,0 +1,6 @@
+{
+    "Id": "i-06d57263fdd56167c",
+    "State": "running",
+    "Type": "t3.micro",
+    "Root": "vol-0db1ec0b36b475cd2"
+}

@@ -1,0 +1,21 @@
+{
+    "KeyMetadata": {
+        "AWSAccountId": "111111111111",
+        "KeyId": "40ad4b6b-fcb9-48e9-8303-868492d74a75",
+        "Arn": "arn:aws:kms:ap-southeast-2:111111111111:key/40ad4b6b-fcb9-48e9-8303-868492d74a75",
+        "CreationDate": "2026-10-26T16:26:23.365000+08:00",
+        "Enabled": true,
+        "Description": "amkcmk experiment E4: customer-managed key for EBS",
+        "KeyUsage": "ENCRYPT_DECRYPT",
+        "KeyState": "Enabled",
+        "Origin": "AWS_KMS",
+        "KeyManager": "CUSTOMER",
+        "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
+        "KeySpec": "SYMMETRIC_DEFAULT",
+        "EncryptionAlgorithms": [
+            "SYMMETRIC_DEFAULT"
+        ],
+        "MultiRegion": false,
+        "CurrentKeyMaterialId": "cea02ac692a1d0f41e4b7065d753d87045ab2a1dcdc5e3f23f1d7b40d1f9d5c3"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Statement": [
+                {
+                    "Action": "iam:ListAccountAliases",
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Sid": "GetAccountFriendlyName"
+                },
+                {
+                    "Action": "organizations:DescribeOrganization",
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Sid": "AllowDescribeOrganization"
+                },
+                {
+                    "Action": [
+                        "account:ListRegions",
+                        "account:GetRegionOptStatus"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Sid": "PermissionsToIdentifyEnabledRegions"
+                },
+                {
+                    "Action": "sts:DecodeAuthorizationMessage",
+                    "Effect": "Allow",
+                    "Resource": "*"
+                }
+            ],
+            "Version": "2012-10-17"
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2026-10-25T11:21:58+00:00"
+    }
+}

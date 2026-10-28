@@ -1,0 +1,7 @@
+UTC 2026-10-25T11:29:45Z  account 111111111111  region ap-southeast-2  bucket amkcmk-s3-111111111111-ap-southeast-2
+amk.txt key manager: AWS   (must be AWS)
+cmk.txt key manager: CUSTOMER   (must be CUSTOMER)
+SETUP: OK
+bucket seen by Clumio: 0 (must be 1 before protecting; 0 is expected until 00-connect is applied)
+Calls that did not succeed:
+  none

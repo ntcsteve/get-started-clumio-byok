@@ -1,0 +1,59 @@
+ROLE: amkcmk-ClumioIAMRole-ase-2   (account ****1111)
+
+== 1. WHO CAN USE THIS ROLE (trust policy)
+  principal : arn:aws:iam::****3333:role/ClumioCustomerProtectRole
+  action    : sts:AssumeRole
+  ExternalId: REQUIRED (value not shown)
+  other conditions: none
+
+== 2. WHAT IT MAY DO, by service (Allow statements in all of the role's policies)
+  SERVICE         ACTIONS   ACCOUNT-SCOPED   WILDCARD
+  account               2   0                2
+  backup                4   1                3
+  cloudwatch            1   0                1
+  ec2                   1   0                1
+  events                8   8                0
+  iam                  11   10               1
+  kms                   6   0                6
+  organizations         1   0                1
+  rds                  40   38               2
+  s3                   36   12               29
+  sns                   4   4                0
+  sts                   1   0                1
+
+== 3. THE ACTIONS A SECURITY REVIEW LOOKS AT FIRST (delete, modify, grant, share), and their scope
+  ACCOUNT-SCOPED  events:DeleteRule
+  ACCOUNT-SCOPED  events:RemoveTargets
+  WILDCARD        kms:CreateGrant
+  ACCOUNT-SCOPED  rds:DeleteDBCluster
+  WILDCARD        rds:DeleteDBClusterSnapshot
+  ACCOUNT-SCOPED  rds:DeleteDBInstance
+  WILDCARD        rds:DeleteDBSnapshot
+  ACCOUNT-SCOPED  rds:ModifyDBCluster
+  ACCOUNT-SCOPED  rds:ModifyDBClusterSnapshotAttribute
+  ACCOUNT-SCOPED  rds:ModifyDBInstance
+  ACCOUNT-SCOPED  rds:ModifyDBSnapshotAttribute
+  ACCOUNT-SCOPED  rds:ModifyOptionGroup
+  ACCOUNT-SCOPED  rds:RemoveTagsFromResource
+  WILDCARD        s3:DeleteObject
+  ACCOUNT-SCOPED  s3:DeleteStorageLensConfiguration
+  WILDCARD        s3:PutBucketNotification
+  ACCOUNT-SCOPED  s3:PutObjectAcl
+  WILDCARD        s3:PutObjectAcl
+
+== 4. KEY ACCESS (KMS actions the role holds)
+  kms:CreateGrant, kms:Decrypt, kms:DescribeKey, kms:Encrypt, kms:GenerateDataKey*, kms:ReEncrypt*
+  (the role's IAM policy, plus the key's own policy, decide use of a key: see the guard test)
+
+== 5. WILL YOU SEE IT? AssumeRole calls on this role in CloudTrail, last 48h, by session name
+  AssumeRole calls: 179, made by account(s): ****3333
+  session names: ACM-StackRegistration, ACM-validate-onboarding, Denali-createRDSCustomerSession, Ingestion-ingesttool, Inventory-EC2-Handling, Inventory-ValidateSubnetGroup, acmsrv-ValidateResources, daebaksrv-RestoreTargetCheck, daebaksrv-S3Backup, daebaksrv-createS3CustomerSession, denalisrv-setupArenas
+  Every Clumio action in your account is recorded under one of these named sessions.
+
+== 6. WHAT THE TERRAFORM MODULE LETS YOU CONSTRAIN (its input variables)
+  iam_prefix
+  iam_path
+  workloads
+  role_tags
+  permissions_boundary_arn
+  pass_role_deny_list

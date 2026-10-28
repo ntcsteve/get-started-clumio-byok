@@ -1,0 +1,14 @@
+[
+  {
+    "name": "amkcmk-ec2-amk",
+    "aws_region": "ap-southeast-2",
+    "policy_id": "5f7d49b7-0a16-4cf7-88c4-58e15c5658c6",
+    "is_deleted": false
+  },
+  {
+    "name": "amkcmk-ec2-cmk",
+    "aws_region": "ap-southeast-2",
+    "policy_id": "5f7d49b7-0a16-4cf7-88c4-58e15c5658c6",
+    "is_deleted": false
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "action": "assign",
+      "entity": {
+        "id": "0182dff3-d117-11f1-88aa-ea9dfaa90a15",
+        "type": "aws_ec2_instance"
+      },
+      "policy_id": "5f7d49b7-0a16-4cf7-88c4-58e15c5658c6"
+    },
+    {
+      "action": "assign",
+      "entity": {
+        "id": "0147ad34-d117-11f1-a9e4-b29b27c38ade",
+        "type": "aws_ec2_instance"
+      },
+      "policy_id": "5f7d49b7-0a16-4cf7-88c4-58e15c5658c6"
+    }
+  ]
+}

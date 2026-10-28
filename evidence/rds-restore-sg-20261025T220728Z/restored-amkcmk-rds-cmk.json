@@ -1,0 +1,10 @@
+{
+    "Id": "amkcmk-rds-cmk-sg1",
+    "Status": "available",
+    "Class": "db.t4g.micro",
+    "Engine": "postgres",
+    "Version": "18.3",
+    "Encrypted": true,
+    "KmsKeyId": "arn:aws:kms:ap-southeast-1:111111111111:key/e25b56b0-d9f8-47fa-8d4a-0ff848ad23b4",
+    "Public": false
+}

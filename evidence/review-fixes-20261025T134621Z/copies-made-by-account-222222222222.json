@@ -1,0 +1,86 @@
+[
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSAccount",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:aws-go-sdk-1792933116967187905",
+      "accountId": "222222222222"
+    },
+    "eventTime": "2026-10-25T12:58:38Z",
+    "eventSource": "rds.amazonaws.com",
+    "eventName": "CopyDBSnapshot",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "APN/1.0 Commvault/1.0 CDF/1.0 APN_1.1/pc_2ny70dnijzyz2rzi9fdofo2ux$ aws-sdk-go-v2/1.47.3 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/rds#1.130.3 m/i",
+    "requestParameters": {
+      "omitted": true,
+      "reason": "HIDDEN_DUE_TO_SECURITY_REASONS"
+    },
+    "responseElements": {
+      "omitted": true,
+      "reason": "HIDDEN_DUE_TO_SECURITY_REASONS"
+    },
+    "requestID": "64e618df-ef16-4a65-99c8-5b996a2acc76",
+    "eventID": "07fe1b49-c1e5-32d4-b72d-34707892bc1a",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::RDS::DBSnapshot",
+        "ARN": "arn:aws:rds:ap-southeast-2:111111111111:snapshot:clumio-airgap-encrypted-t4043795459-org00000000000000000"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "5a1d3f21-ff6e-4f76-a23d-56469db5eddb",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "rds.ap-southeast-2.amazonaws.com"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSAccount",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:aws-go-sdk-1792933115105007371",
+      "accountId": "222222222222"
+    },
+    "eventTime": "2026-10-25T12:58:36Z",
+    "eventSource": "rds.amazonaws.com",
+    "eventName": "CopyDBSnapshot",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "APN/1.0 Commvault/1.0 CDF/1.0 APN_1.1/pc_2ny70dnijzyz2rzi9fdofo2ux$ aws-sdk-go-v2/1.47.3 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/rds#1.130.3 m/i",
+    "requestParameters": {
+      "omitted": true,
+      "reason": "HIDDEN_DUE_TO_SECURITY_REASONS"
+    },
+    "responseElements": {
+      "omitted": true,
+      "reason": "HIDDEN_DUE_TO_SECURITY_REASONS"
+    },
+    "requestID": "ace9406a-b691-40fc-9f31-ee0f3bea7bbd",
+    "eventID": "076c52b5-24f8-3b30-80d7-366d27de854f",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::RDS::DBSnapshot",
+        "ARN": "arn:aws:rds:ap-southeast-2:111111111111:snapshot:clumio-airgap-encrypted-t4043795565-org00000000000000000"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "34070869-32a4-4100-bb7c-72622a05c2d7",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "rds.ap-southeast-2.amazonaws.com"
+    }
+  }
+]

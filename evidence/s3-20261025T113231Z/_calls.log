@@ -1,0 +1,7 @@
+aws    exit=0  head-amk.json
+aws    exit=0  key-amk.json
+aws    exit=0  head-cmk.json
+aws    exit=0  key-cmk.json
+clumio http=200  buckets.json
+clumio http=200  backups.json
+clumio http=504  tasks.json

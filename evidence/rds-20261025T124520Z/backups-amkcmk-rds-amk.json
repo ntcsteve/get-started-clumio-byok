@@ -1,0 +1,1 @@
+{"current_count":0,"limit":10,"start":"1","total_count":0,"total_pages_count":0,"filter_applied":"{\"resource_id\":{\"$eq\":\"e9d53670-d071-11f1-87a1-2e06e99bf6a4\"}}","_links":{"_self":{"href":"/api/backups/aws/rds-resources?filter=%7B%22resource_id%22:%7B%22$eq%22:%22e9d53670-d071-11f1-87a1-2e06e99bf6a4%22%7D%7D","type":"get","templated":false}},"_embedded":{"items":[]}}

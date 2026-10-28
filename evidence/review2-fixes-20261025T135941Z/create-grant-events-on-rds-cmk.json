@@ -1,0 +1,663 @@
+[
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "ec2-frontend-api.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T13:22:44Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "ec2-frontend-api.amazonaws.com",
+    "requestParameters": {
+      "constraints": {
+        "encryptionContextSubset": {
+          "aws:rds:db-id": "db-4UAN35JVVBDODH7WMHT2RVI3VU",
+          "aws:ebs:id": "vol-0e5d3b3f498a01a38"
+        }
+      },
+      "granteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "retiringPrincipal": "ec2.ap-southeast-2.amazonaws.com",
+      "operations": [
+        "Decrypt"
+      ]
+    },
+    "responseElements": {
+      "grantId": "4032f7b45fda31b33d6139545e15c7c9d1d255844e348fc2b0651b26ee7e830a",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "bbc5b9f3-cd41-47e3-a3cb-18a522afb488",
+    "eventID": "26af3ca2-85c7-3214-98fa-b25f51e9c07e",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "ef84d3c4-4003-4541-b864-2ddf961e2588",
+    "vpcEndpointId": "AWS Internal",
+    "vpcEndpointAccountId": "AWS Internal",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "rds.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T13:22:40Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "rds.amazonaws.com",
+    "requestParameters": {
+      "granteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "retiringPrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "constraints": {
+        "encryptionContextSubset": {
+          "aws:rds:db-id": "db-4UAN35JVVBDODH7WMHT2RVI3VU"
+        }
+      },
+      "operations": [
+        "Encrypt",
+        "Decrypt",
+        "GenerateDataKey",
+        "GenerateDataKeyWithoutPlaintext"
+      ]
+    },
+    "responseElements": {
+      "grantId": "6774747a9f21abb697d8eb5d149593bcfbcd96e4159ac46b85daec117856c1c8",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "cd1c5f12-121f-40e7-9ffb-fd3d7029f474",
+    "eventID": "08ea9e42-da03-37cc-bd26-4acfbeb1014b",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "9fc43edd-7b68-4296-8554-8762da70fad5",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "rds.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T13:22:40Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "rds.amazonaws.com",
+    "requestParameters": {
+      "granteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "retiringPrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "constraints": {
+        "encryptionContextSubset": {
+          "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU"
+        }
+      },
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "operations": [
+        "Encrypt",
+        "Decrypt",
+        "GenerateDataKey",
+        "GenerateDataKeyWithoutPlaintext"
+      ]
+    },
+    "responseElements": {
+      "grantId": "649864ba6e68101a2fd5029cb52bc425f8144553671f78c508a5e9579d3ae422",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "98a0ca3c-36db-42f8-8540-4e0c0783c434",
+    "eventID": "da74411e-a60b-3531-aaf4-294ab9386dcc",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "71df4dc8-c0e3-4141-951d-a2740395c561",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:Denali-createRDSCustomerSession",
+      "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/Denali-createRDSCustomerSession",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAXXXXXXXXXXXXXXXXX",
+          "arn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+          "accountId": "111111111111",
+          "userName": "amkcmk-ClumioIAMRole-ase-2"
+        },
+        "attributes": {
+          "creationDate": "2026-10-25T13:19:26Z",
+          "mfaAuthenticated": "false"
+        }
+      },
+      "invokedBy": "rds.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T13:22:05Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "rds.amazonaws.com",
+    "requestParameters": {
+      "operations": [
+        "Encrypt",
+        "Decrypt",
+        "GenerateDataKey",
+        "GenerateDataKeyWithoutPlaintext",
+        "ReEncryptFrom",
+        "ReEncryptTo",
+        "CreateGrant",
+        "DescribeKey"
+      ],
+      "constraints": {
+        "encryptionContextSubset": {
+          "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU"
+        }
+      },
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "granteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "retiringPrincipal": "rds.ap-southeast-2.amazonaws.com"
+    },
+    "responseElements": {
+      "grantId": "1ebe88a0bc64cdeb3c80f6db6d7113a5de574279da067de40772b17bd54d0c60",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "e1f7b136-effa-4b3d-8b9e-f2d547f877d1",
+    "eventID": "70da180e-329f-4a20-90e6-391627e21d85",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:Denali-createRDSCustomerSession",
+      "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/Denali-createRDSCustomerSession",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAXXXXXXXXXXXXXXXXX",
+          "arn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+          "accountId": "111111111111",
+          "userName": "amkcmk-ClumioIAMRole-ase-2"
+        },
+        "attributes": {
+          "creationDate": "2026-10-25T13:19:26Z",
+          "mfaAuthenticated": "false"
+        }
+      },
+      "invokedBy": "rds.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T13:22:05Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "rds.amazonaws.com",
+    "requestParameters": {
+      "constraints": {
+        "encryptionContextSubset": {
+          "aws:rds:db-id": "db-4UAN35JVVBDODH7WMHT2RVI3VU"
+        }
+      },
+      "granteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "operations": [
+        "Encrypt",
+        "Decrypt",
+        "GenerateDataKey",
+        "GenerateDataKeyWithoutPlaintext",
+        "ReEncryptFrom",
+        "ReEncryptTo",
+        "CreateGrant",
+        "DescribeKey"
+      ],
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "retiringPrincipal": "rds.ap-southeast-2.amazonaws.com"
+    },
+    "responseElements": {
+      "grantId": "c13a40415a133199eea9f8ee6de836c5f03556089ed37d9a407023aea083d92f",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "7ce128c0-bb82-4360-8366-8d97740e4785",
+    "eventID": "cc88ae21-360c-4573-862e-c0c676ab0f04",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "ec2-frontend-api.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T13:19:53Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "ec2-frontend-api.amazonaws.com",
+    "requestParameters": {
+      "granteePrincipal": "ec2.ap-southeast-2.amazonaws.com",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "constraints": {
+        "encryptionContextEquals": {
+          "aws:rds:src-db-arn": "arn:aws:rds:ap-southeast-2:111111111111:db:db-53b2q6ycumn3e4owsfgmwmbptu",
+          "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU",
+          "aws:ebs:id": "snap-01bc05ae64ddabe6e",
+          "aws:rds:snap-id": "snapshot-7ULJB7KYEJYTR45QHKLDVFVPOE"
+        }
+      },
+      "operations": [
+        "Decrypt"
+      ],
+      "retiringPrincipal": "ec2.ap-southeast-2.amazonaws.com"
+    },
+    "responseElements": {
+      "grantId": "629f56cfcc91d33c3d234596461215cd601e4650868fb658f19a159b6eeea062",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "21454fcc-aaf4-4d47-a739-6370f1c6c888",
+    "eventID": "96aa8fc2-247b-3a9c-844b-9a91361f84a7",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "0df3b0b8-dc0b-4b5a-9ce0-e01f57df1abe",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:Denali-createRDSCustomerSession",
+      "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/Denali-createRDSCustomerSession",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAXXXXXXXXXXXXXXXXX",
+          "arn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+          "accountId": "111111111111",
+          "userName": "amkcmk-ClumioIAMRole-ase-2"
+        },
+        "attributes": {
+          "creationDate": "2026-10-25T13:19:28Z",
+          "mfaAuthenticated": "false"
+        }
+      },
+      "invokedBy": "rds.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T13:19:28Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "rds.amazonaws.com",
+    "requestParameters": {
+      "retiringPrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "operations": [
+        "Encrypt",
+        "Decrypt",
+        "GenerateDataKeyWithoutPlaintext",
+        "CreateGrant",
+        "DescribeKey"
+      ],
+      "granteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "constraints": {
+        "encryptionContextSubset": {
+          "aws:rds:src-db-arn": "arn:aws:rds:ap-southeast-2:111111111111:db:db-53b2q6ycumn3e4owsfgmwmbptu",
+          "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU"
+        }
+      }
+    },
+    "responseElements": {
+      "grantId": "fccf271166353a4ec844fa8326b26209f556fdcccb09b32b2fdc0360da51221a",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "c3af1c63-f350-45d6-b8a6-c80f069e8719",
+    "eventID": "33644ed4-dd66-4ba1-8d55-5cedfff0426b",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "prod.kms-caller.ebs.ap-southeast-2.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T12:55:39Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "prod.kms-caller.ebs.ap-southeast-2.amazonaws.com",
+    "requestParameters": {
+      "operations": [
+        "Decrypt"
+      ],
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "retiringPrincipal": "ec2.ap-southeast-2.amazonaws.com",
+      "constraints": {
+        "encryptionContextEquals": {
+          "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU",
+          "aws:ebs:id": "vol-013048a1a1a0243d1"
+        }
+      },
+      "granteePrincipal": "ec2.ap-southeast-2.amazonaws.com"
+    },
+    "responseElements": {
+      "grantId": "43431c2d1bad4e7b3f38949c78359f9a154c06f4c88c838769a51936737ecced",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "e406e1a1-97c5-48d1-abcd-36f9658760e2",
+    "eventID": "b470d4dd-9b72-351f-9587-0a06c3f711d5",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "ca02a543-6b21-4f86-92d6-da2f8522b9f1",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:Denali-createRDSCustomerSession",
+      "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/Denali-createRDSCustomerSession",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAXXXXXXXXXXXXXXXXX",
+          "arn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+          "accountId": "111111111111",
+          "userName": "amkcmk-ClumioIAMRole-ase-2"
+        },
+        "attributes": {
+          "creationDate": "2026-10-25T12:50:53Z",
+          "mfaAuthenticated": "false"
+        }
+      },
+      "invokedBy": "rds.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T12:55:30Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "rds.amazonaws.com",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "constraints": {
+        "encryptionContextSubset": {
+          "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU"
+        }
+      },
+      "operations": [
+        "Decrypt",
+        "CreateGrant",
+        "DescribeKey"
+      ],
+      "retiringPrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "granteePrincipal": "rds.ap-southeast-2.amazonaws.com"
+    },
+    "responseElements": {
+      "grantId": "b93c625e7b0773a438f6581236862b8cf93a98bb613bb1ed5954bc37c427d45d",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "c0d8ee04-d105-462d-b2ce-57cf5dab9a25",
+    "eventID": "dabf6651-2a6e-4294-8bc2-aba62b8399f2",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "ec2-frontend-api.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T12:38:28Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "ec2-frontend-api.amazonaws.com",
+    "requestParameters": {
+      "operations": [
+        "Decrypt"
+      ],
+      "constraints": {
+        "encryptionContextSubset": {
+          "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU",
+          "aws:ebs:id": "vol-013048a1a1a0243d1"
+        }
+      },
+      "retiringPrincipal": "ec2.ap-southeast-2.amazonaws.com",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "granteePrincipal": "rds.ap-southeast-2.amazonaws.com"
+    },
+    "responseElements": {
+      "grantId": "76197845418655965f3c3112202e583ccbd72ed3a9eaa919914ee5762e8899e4",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "e8c9c340-58d3-4017-a133-b14d7f265c15",
+    "eventID": "5197892f-8326-329f-a7e3-c4ef939588ab",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "5d35ad77-3d42-4d87-871a-249756ddd53d",
+    "vpcEndpointId": "AWS Internal",
+    "vpcEndpointAccountId": "AWS Internal",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSService",
+      "invokedBy": "rds.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T12:38:25Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "rds.amazonaws.com",
+    "requestParameters": {
+      "granteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "constraints": {
+        "encryptionContextSubset": {
+          "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU"
+        }
+      },
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "retiringPrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "operations": [
+        "Encrypt",
+        "Decrypt",
+        "GenerateDataKey",
+        "GenerateDataKeyWithoutPlaintext"
+      ]
+    },
+    "responseElements": {
+      "grantId": "01aca230964f76e8600939b0b2767eaf1691d07f503afbbe8ca428b7da59617c",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "c2026262-afea-48b2-9e0e-682b30825ab0",
+    "eventID": "af2b7797-9967-3fe7-8c85-2d2b586173db",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "0edbb06a-c7fc-4b4b-b4cd-941c94e2bc5e",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      },
+      "invokedBy": "rds.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T12:37:49Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "rds.amazonaws.com",
+    "requestParameters": {
+      "constraints": {
+        "encryptionContextSubset": {
+          "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU"
+        }
+      },
+      "granteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+      "operations": [
+        "Encrypt",
+        "Decrypt",
+        "GenerateDataKey",
+        "GenerateDataKeyWithoutPlaintext",
+        "ReEncryptFrom",
+        "ReEncryptTo",
+        "CreateGrant",
+        "DescribeKey"
+      ],
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+      "retiringPrincipal": "rds.ap-southeast-2.amazonaws.com"
+    },
+    "responseElements": {
+      "grantId": "e69151e7ff2c4c789a7341d20ae1cefb444544641aee43ebe056e80d4c012bc2",
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    },
+    "requestID": "24c0a95e-1a2d-479a-b7e0-2f418b76f2a9",
+    "eventID": "b2190564-bfbe-4f98-b48c-5ce1cc2bc862",
+    "readOnly": false,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management"
+  }
+]

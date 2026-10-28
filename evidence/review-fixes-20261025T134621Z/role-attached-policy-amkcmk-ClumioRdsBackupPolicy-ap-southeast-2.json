@@ -1,0 +1,150 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Statement": [
+                {
+                    "Action": [
+                        "rds:ModifyDBClusterSnapshotAttribute",
+                        "rds:CopyDBClusterSnapshot"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:*:222222222222:cluster-snapshot:*",
+                        "arn:aws:rds:*:111111111111:cluster-snapshot:*"
+                    ],
+                    "Sid": "CopyAndSharingClusterSnapshotToClumio"
+                },
+                {
+                    "Action": [
+                        "rds:ModifyDBSnapshotAttribute",
+                        "rds:CopyDBSnapshot"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:*:222222222222:snapshot:*",
+                        "arn:aws:rds:*:222222222222:og:*",
+                        "arn:aws:rds:*:111111111111:snapshot:*",
+                        "arn:aws:rds:*:111111111111:og:*"
+                    ],
+                    "Sid": "CopyAndSharingInstanceSnapshotToClumio"
+                },
+                {
+                    "Action": "rds:CreateDBClusterSnapshot",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster-snapshot:*"
+                    ],
+                    "Sid": "CreateClusterSnapshotForClumioBackup"
+                },
+                {
+                    "Action": "rds:DescribeDBClusterSnapshots",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster-snapshot:*"
+                    ],
+                    "Sid": "DescribeClusterSnapshots"
+                },
+                {
+                    "Action": "rds:CreateDBSnapshot",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:snapshot:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:db:*"
+                    ],
+                    "Sid": "CreateInstanceSnapshotForClumioBackup"
+                },
+                {
+                    "Action": "rds:DescribeDBSubnetGroups",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:rds:ap-southeast-2:111111111111:subgrp:*",
+                    "Sid": "BackingUpSubnetGroups"
+                },
+                {
+                    "Action": "rds:AddTagsToResource",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:*:111111111111:snapshot:*",
+                        "arn:aws:rds:*:111111111111:cluster-snapshot:*"
+                    ],
+                    "Sid": "AddingClumioTagToSnapshot"
+                },
+                {
+                    "Action": "rds:ModifyOptionGroup",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:rds:*:111111111111:og:*",
+                    "Sid": "BackingUpOptionGroups"
+                },
+                {
+                    "Action": "rds:ModifyDBCluster",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:og:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster-pg:*"
+                    ],
+                    "Sid": "ApplyPITRConfigurationOnCluster"
+                },
+                {
+                    "Action": "rds:ModifyDBInstance",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:secgrp:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:pg:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:og:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:db:*"
+                    ],
+                    "Sid": "ApplyPITRConfigurationOnInstance"
+                },
+                {
+                    "Action": "ec2:DescribeSecurityGroups",
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Sid": "ReadRDSSecurityGroupsPermissions"
+                },
+                {
+                    "Action": "rds:ListTagsForResource",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:*:111111111111:snapshot:*",
+                        "arn:aws:rds:*:111111111111:cluster-snapshot:*"
+                    ],
+                    "Sid": "ListClumioTagsForSnapshots"
+                },
+                {
+                    "Action": "rds:DeleteDBClusterSnapshot",
+                    "Condition": {
+                        "StringLike": {
+                            "rds:cluster-snapshot-tag/clumio.rds.snapshot.tag": "*"
+                        }
+                    },
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Sid": "ClusterSnapshotCleanupPermissions"
+                },
+                {
+                    "Action": "rds:DeleteDBSnapshot",
+                    "Condition": {
+                        "StringLike": {
+                            "rds:snapshot-tag/clumio.rds.snapshot.tag": "*"
+                        }
+                    },
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Sid": "InstanceSnapshotCleanupPermissions"
+                },
+                {
+                    "Action": "kms:CreateGrant",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:kms:*:*:key/*",
+                    "Sid": "BackupKMSPermissions"
+                }
+            ],
+            "Version": "2012-10-17"
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2026-10-25T12:37:13+00:00"
+    }
+}

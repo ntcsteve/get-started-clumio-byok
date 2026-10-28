@@ -1,0 +1,94 @@
+[
+    {
+        "Id": "snap-0fb7e33ab58148754",
+        "Volume": "vol-050342df86ecac887",
+        "Encrypted": true,
+        "Key": "arn:aws:kms:ap-southeast-2:111111111111:key/e8e3ab17-dd45-4621-9916-72e7927110aa",
+        "State": "completed",
+        "Start": "2026-10-26T08:30:58.893000+00:00",
+        "Tags": [
+            {
+                "Key": "BackupAssetID",
+                "Value": "363559525"
+            },
+            {
+                "Key": "BackupID",
+                "Value": "29210362"
+            },
+            {
+                "Key": "Name",
+                "Value": "amkcmk-ec2-amk"
+            },
+            {
+                "Key": "OperationName",
+                "Value": "Clumio Backup Snapshot"
+            },
+            {
+                "Key": "OrgID",
+                "Value": "96122681694783822"
+            },
+            {
+                "Key": "Vendor",
+                "Value": "Clumio"
+            },
+            {
+                "Key": "TaskID",
+                "Value": "TaskID-4047398686"
+            },
+            {
+                "Key": "exp",
+                "Value": "amkcmk"
+            },
+            {
+                "Key": "OperationType",
+                "Value": "EC2 Backup"
+            }
+        ]
+    },
+    {
+        "Id": "snap-059554067c6ffa2cd",
+        "Volume": "vol-0ecae3c1e35d36e49",
+        "Encrypted": true,
+        "Key": "arn:aws:kms:ap-southeast-2:111111111111:key/40ad4b6b-fcb9-48e9-8303-868492d74a75",
+        "State": "completed",
+        "Start": "2026-10-26T08:30:58.806000+00:00",
+        "Tags": [
+            {
+                "Key": "OperationType",
+                "Value": "EC2 Backup"
+            },
+            {
+                "Key": "exp",
+                "Value": "amkcmk"
+            },
+            {
+                "Key": "OperationName",
+                "Value": "Clumio Backup Snapshot"
+            },
+            {
+                "Key": "BackupID",
+                "Value": "29210363"
+            },
+            {
+                "Key": "Name",
+                "Value": "amkcmk-ec2-cmk"
+            },
+            {
+                "Key": "TaskID",
+                "Value": "TaskID-4047398635"
+            },
+            {
+                "Key": "BackupAssetID",
+                "Value": "363559524"
+            },
+            {
+                "Key": "OrgID",
+                "Value": "96122681694783822"
+            },
+            {
+                "Key": "Vendor",
+                "Value": "Clumio"
+            }
+        ]
+    }
+]

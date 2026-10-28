@@ -1,0 +1,8 @@
+rds-restore-sg  UTC 20261025T220728Z  account 111111111111  source ap-southeast-2 -> target ap-southeast-1  (waited 690s)
+amkcmk-rds-amk-sg1: task=completed status=available encrypted=true engine=postgres 18.3 (source 18.3)
+   restored key: e25b56b0-d9f8-47fa-8d4a-0ff848ad23b4  manager=AWS  alias=alias/aws/rds
+   source key:   f07e156d-3471-465a-ad6c-95a5159fc4e7
+amkcmk-rds-cmk-sg1: task=completed status=available encrypted=true engine=postgres 18.3 (source 18.3)
+   restored key: e25b56b0-d9f8-47fa-8d4a-0ff848ad23b4  manager=AWS  alias=alias/aws/rds
+   source key:   c303ff3d-1ef3-46f6-ad72-913747686422
+rds-restore-sg: PASS (task completed, instance available, same engine version). Read the key lines above: in another Region the key may differ. Data is not checked (unseeded databases).

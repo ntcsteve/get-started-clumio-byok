@@ -1,0 +1,8 @@
+aws    exit=0  db-amkcmk-rds-amk.json
+aws    exit=0  key-amkcmk-rds-amk.json
+aws    exit=0  db-amkcmk-rds-cmk.json
+aws    exit=0  key-amkcmk-rds-cmk.json
+clumio http=200  rds-resources.json
+clumio http=200  backups-amkcmk-rds-amk.json
+clumio http=200  backups-amkcmk-rds-cmk.json
+clumio http=200  tasks.json

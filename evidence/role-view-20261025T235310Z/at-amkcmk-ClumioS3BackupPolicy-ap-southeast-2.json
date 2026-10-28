@@ -1,0 +1,91 @@
+{
+    "Statement": [
+        {
+            "Action": "cloudwatch:GetMetricStatistics",
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "GetS3CloudwatchMetrics"
+        },
+        {
+            "Action": [
+                "s3:PutObjectTagging",
+                "s3:PutObjectAcl",
+                "s3:PutObject",
+                "s3:ListBucket"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "s3:ResourceAccount": "222222222222"
+                }
+            },
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:s3:ap-southeast-2:222222222222:accesspoint/clumio-data*",
+                "arn:aws:s3:::clumio-s3-backup*/*",
+                "arn:aws:s3:::clumio-s3-backup*"
+            ],
+            "Sid": "AllowS3CopyToClumio"
+        },
+        {
+            "Action": "organizations:DescribeOrganization",
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "AllowDescribeOrganization"
+        },
+        {
+            "Action": [
+                "s3:PutInventoryConfiguration",
+                "s3:ListBucketVersions",
+                "s3:ListBucketMultipartUploads",
+                "s3:ListBucket",
+                "s3:GetObjectVersionTagging",
+                "s3:GetObjectVersion",
+                "s3:GetObjectTagging",
+                "s3:GetObject",
+                "s3:GetInventoryConfiguration"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::*",
+            "Sid": "AllowS3Backup"
+        },
+        {
+            "Action": [
+                "s3:PutBucketNotification",
+                "s3:GetBucketNotification"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:ResourceAccount": "111111111111"
+                }
+            },
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::*",
+            "Sid": "AllowS3ContinuousBackup"
+        },
+        {
+            "Action": [
+                "events:RemoveTargets",
+                "events:PutTargets",
+                "events:PutRule",
+                "events:ListTargetsByRule",
+                "events:DescribeRule",
+                "events:DeleteRule"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:events:*:111111111111:rule/clumio-s3-event-rule-*",
+            "Sid": "AllowS3EventRuleUpdate"
+        },
+        {
+            "Action": "iam:PassRole",
+            "Condition": {
+                "StringEquals": {
+                    "iam:PassedToService": "events.amazonaws.com"
+                }
+            },
+            "Effect": "Allow",
+            "Resource": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioS3EbRole-ase-2",
+            "Sid": "AllowS3ContinuousBackupRolePassToEventBridge"
+        }
+    ],
+    "Version": "2012-10-17"
+}

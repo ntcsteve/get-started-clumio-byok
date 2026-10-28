@@ -1,0 +1,240 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Statement": [
+                {
+                    "Action": "rds:CopyDBClusterSnapshot",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:*:222222222222:cluster-snapshot:*",
+                        "arn:aws:rds:*:111111111111:cluster-snapshot:*"
+                    ],
+                    "Sid": "CopyClusterSnapshotFromClumio"
+                },
+                {
+                    "Action": "rds:CopyDBSnapshot",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:*:222222222222:snapshot:*",
+                        "arn:aws:rds:*:222222222222:og:*",
+                        "arn:aws:rds:*:111111111111:snapshot:*",
+                        "arn:aws:rds:*:111111111111:og:*"
+                    ],
+                    "Sid": "CopyInstanceSnapshotFromClumio"
+                },
+                {
+                    "Action": "rds:DescribeDBSubnetGroups",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:rds:ap-southeast-2:111111111111:subgrp:*",
+                    "Sid": "VerifyingSubnetGroups"
+                },
+                {
+                    "Action": "rds:DeleteDBClusterSnapshot",
+                    "Condition": {
+                        "StringLike": {
+                            "rds:cluster-snapshot-tag/clumio.rds.snapshot.tag": "*"
+                        }
+                    },
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Sid": "ClusterSnapshotCleanupPermissions"
+                },
+                {
+                    "Action": "rds:DeleteDBSnapshot",
+                    "Condition": {
+                        "StringLike": {
+                            "rds:snapshot-tag/clumio.rds.snapshot.tag": "*"
+                        }
+                    },
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Sid": "InstanceSnapshotCleanupPermissions"
+                },
+                {
+                    "Action": "rds:ListTagsForResource",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:db:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster:*",
+                        "arn:aws:rds:*:111111111111:snapshot:*",
+                        "arn:aws:rds:*:111111111111:cluster-snapshot:*"
+                    ],
+                    "Sid": "ListClumioTagsForRestoredTag"
+                },
+                {
+                    "Action": "rds:CreateDBInstance",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:subgrp:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:secgrp:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:pg:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:og:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:db:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster:*"
+                    ],
+                    "Sid": "RestoreInstancesInACluster"
+                },
+                {
+                    "Action": [
+                        "rds:DescribeDBParameterGroups",
+                        "rds:DescribeDBClusterParameterGroups",
+                        "rds:CreateDBParameterGroup",
+                        "rds:CreateDBClusterParameterGroup"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:*:111111111111:pg:*",
+                        "arn:aws:rds:*:111111111111:cluster-pg:*"
+                    ],
+                    "Sid": "RestoreParameterGroups"
+                },
+                {
+                    "Action": "rds:RestoreDBInstanceFromDBSnapshot",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:subgrp:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:snapshot:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:pg:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:og:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:db:*"
+                    ],
+                    "Sid": "RestoreInstanceFromSnapshot"
+                },
+                {
+                    "Action": "rds:RestoreDBInstanceToPointInTime",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:subgrp:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:pg:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:og:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:db:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:auto-backup:*"
+                    ],
+                    "Sid": "RestoreInstanceToPointInTime"
+                },
+                {
+                    "Action": "rds:RestoreDBClusterFromSnapshot",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:subgrp:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:og:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster-snapshot:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster-pg:*"
+                    ],
+                    "Sid": "RestoreClusterFromSnapshot"
+                },
+                {
+                    "Action": "rds:RestoreDBClusterToPointInTime",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:subgrp:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:og:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster-pg:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:auto-backup:*"
+                    ],
+                    "Sid": "RestoreClusterToPointInTime"
+                },
+                {
+                    "Action": "rds:RemoveTagsFromResource",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:db:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:db-snapshot:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster-snapshot:*"
+                    ],
+                    "Sid": "RemoveClumioTagAfterRestore"
+                },
+                {
+                    "Action": "rds:AddTagsToResource",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:ap-southeast-2:111111111111:db:*",
+                        "arn:aws:rds:ap-southeast-2:111111111111:cluster:*",
+                        "arn:aws:rds:*:111111111111:snapshot:*",
+                        "arn:aws:rds:*:111111111111:og:*",
+                        "arn:aws:rds:*:111111111111:cluster-snapshot:*"
+                    ],
+                    "Sid": "AddingClumioTagToRestoredRDSResource"
+                },
+                {
+                    "Action": "rds:CreateOptionGroup",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:rds:*:111111111111:og:*",
+                    "Sid": "RestoreOptionGroups"
+                },
+                {
+                    "Action": "rds:CreateDBInstanceReadReplica",
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:rds:*:111111111111:subgrp:*",
+                        "arn:aws:rds:*:111111111111:secgrp:*",
+                        "arn:aws:rds:*:111111111111:pg:*",
+                        "arn:aws:rds:*:111111111111:og:*",
+                        "arn:aws:rds:*:111111111111:db:*",
+                        "arn:aws:rds:*:111111111111:cluster:*",
+                        "arn:aws:rds:*:111111111111:cluster-pg:*"
+                    ],
+                    "Sid": "RestoreReadReplicas"
+                },
+                {
+                    "Action": "rds:DeleteDBCluster",
+                    "Condition": {
+                        "StringLike": {
+                            "rds:cluster-tag/clumio.restore.tag": "*"
+                        }
+                    },
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:rds:ap-southeast-2:111111111111:cluster:*",
+                    "Sid": "ClusterCleanupPermissions"
+                },
+                {
+                    "Action": "rds:DeleteDBInstance",
+                    "Condition": {
+                        "StringLike": {
+                            "rds:db-tag/clumio.restore.tag": "*"
+                        }
+                    },
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:rds:ap-southeast-2:111111111111:db:*",
+                    "Sid": "InstanceCleanupPermissions"
+                },
+                {
+                    "Action": "rds:AddRoleToDBCluster",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:rds:ap-southeast-2:111111111111:cluster:*",
+                    "Sid": "RestoreAssociatedRolesInCluster"
+                },
+                {
+                    "Action": "rds:AddRoleToDBInstance",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:rds:ap-southeast-2:111111111111:db:*",
+                    "Sid": "RestoreAssociatedRolesInInstance"
+                },
+                {
+                    "Action": "iam:PassRole",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": "rds.amazonaws.com"
+                        }
+                    },
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:iam::111111111111:role/*",
+                    "Sid": "PassAssociatedRoles"
+                },
+                {
+                    "Action": "kms:CreateGrant",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:kms:*:*:key/*",
+                    "Sid": "RestoreKMSPermissions"
+                }
+            ],
+            "Version": "2012-10-17"
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2026-10-25T12:37:13+00:00"
+    }
+}

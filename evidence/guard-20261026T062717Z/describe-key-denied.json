@@ -1,0 +1,21 @@
+{
+    "KeyMetadata": {
+        "AWSAccountId": "111111111111",
+        "KeyId": "d4029cb7-b655-42cd-b588-a60eb052645a",
+        "Arn": "arn:aws:kms:ap-southeast-2:111111111111:key/d4029cb7-b655-42cd-b588-a60eb052645a",
+        "CreationDate": "2026-10-26T07:53:44.026000+08:00",
+        "Enabled": true,
+        "Description": "amkcmk E3: strict key policy, Clumio role explicitly denied",
+        "KeyUsage": "ENCRYPT_DECRYPT",
+        "KeyState": "Enabled",
+        "Origin": "AWS_KMS",
+        "KeyManager": "CUSTOMER",
+        "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
+        "KeySpec": "SYMMETRIC_DEFAULT",
+        "EncryptionAlgorithms": [
+            "SYMMETRIC_DEFAULT"
+        ],
+        "MultiRegion": false,
+        "CurrentKeyMaterialId": "5202676d96234f4b9892a80c9e149e4e1ac21de6eee6f98e83f8838712b35a08"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "KeyMetadata": {
+        "AWSAccountId": "111111111111",
+        "KeyId": "c303ff3d-1ef3-46f6-ad72-913747686422",
+        "Arn": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+        "CreationDate": "2026-10-25T20:37:38.836000+08:00",
+        "Enabled": true,
+        "Description": "amkcmk experiment E1: customer-managed key for RDS",
+        "KeyUsage": "ENCRYPT_DECRYPT",
+        "KeyState": "Enabled",
+        "Origin": "AWS_KMS",
+        "KeyManager": "CUSTOMER",
+        "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
+        "KeySpec": "SYMMETRIC_DEFAULT",
+        "EncryptionAlgorithms": [
+            "SYMMETRIC_DEFAULT"
+        ],
+        "MultiRegion": false,
+        "CurrentKeyMaterialId": "4ebb68a8770dde05ea662aa7299c4980b5e39e3b113bbacae36384661bdf8a72"
+    }
+}

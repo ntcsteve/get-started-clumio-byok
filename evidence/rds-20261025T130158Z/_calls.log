@@ -1,0 +1,16 @@
+aws    exit=0  db-amkcmk-rds-amk.json
+aws    exit=0  key-amkcmk-rds-amk.json
+aws    exit=0  db-amkcmk-rds-cmk.json
+aws    exit=0  key-amkcmk-rds-cmk.json
+aws    exit=0  alias-amkcmk-rds-amk.json
+aws    exit=0  tags-amkcmk-rds-amk.json
+aws    exit=0  alias-amkcmk-rds-cmk.json
+aws    exit=0  tags-amkcmk-rds-cmk.json
+aws    exit=0  policy-aws-managed-key.json
+aws    exit=0  snapshots.json
+aws    exit=0  snapshot-shared-clumio-airgap-encrypted-t4043795459-org00000000000000000.json
+aws    exit=0  snapshot-shared-clumio-airgap-encrypted-t4043795565-org00000000000000000.json
+clumio http=200  rds-resources.json
+clumio http=200  backups-amkcmk-rds-amk.json
+clumio http=200  backups-amkcmk-rds-cmk.json
+clumio http=200  tasks.json

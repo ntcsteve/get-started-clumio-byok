@@ -1,0 +1,8 @@
+UTC 20261025T131639Z  account 111111111111  region ap-southeast-2  (waited 780s)
+amkcmk-rds-amk-r1: task=completed status=available encrypted=true engine=postgres 18.3 (source 18.3)
+   restored key: f07e156d-3471-465a-ad6c-95a5159fc4e7  manager=AWS  alias=alias/aws/rds
+   source key:   f07e156d-3471-465a-ad6c-95a5159fc4e7
+amkcmk-rds-cmk-r1: task=completed status=available encrypted=true engine=postgres 18.3 (source 18.3)
+   restored key: c303ff3d-1ef3-46f6-ad72-913747686422  manager=CUSTOMER  alias=none
+   source key:   c303ff3d-1ef3-46f6-ad72-913747686422
+E1b: PASS (restored, available, same engine version). Data is not checked: the databases are empty.

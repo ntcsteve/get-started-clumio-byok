@@ -1,0 +1,7 @@
+Provenance of the evidence in this folder (captured 2026-10-25T13:39:55Z)
+aws cli : aws-cli/2.34.41
+terraform: Terraform v1.15.5
+jq      : jq-1.7.1-apple
+kit modules: get-started-clumio-aws (Terraform provider clumio-code/clumio 0.24.x, hashicorp/aws 6.x)
+AWS calls signed in as: arn:aws:iam::****1111:root (read and write of our own test resources only; Clumio's actions are by its role, see CloudTrail)
+Region: ap-southeast-2 (restore target also ap-southeast-1)

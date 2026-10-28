@@ -1,0 +1,110 @@
+[
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-S3Backup",
+      "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/daebaksrv-S3Backup",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAXXXXXXXXXXXXXXXXX",
+          "arn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+          "accountId": "111111111111",
+          "userName": "amkcmk-ClumioIAMRole-ase-2"
+        },
+        "attributes": {
+          "creationDate": "2026-10-25T11:36:12Z",
+          "mfaAuthenticated": "false"
+        }
+      },
+      "invokedBy": "fas.s3.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T11:36:56Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "Decrypt",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "fas.s3.amazonaws.com",
+    "requestParameters": {
+      "encryptionContext": {
+        "aws:s3:arn": "arn:aws:s3:::amkcmk-s3-111111111111-ap-southeast-2/amk.txt"
+      },
+      "encryptionAlgorithm": "SYMMETRIC_DEFAULT"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "keyMaterialId": "b244619e2cd52cac066b33c36f3f0b086ce159a3bb50e40dbfefe42bd89a2edf"
+    },
+    "requestID": "59e0a423-561c-4ff3-9b48-2d053ed9d9b2",
+    "eventID": "6218bcb5-6412-4e86-bb83-7cd1930fec5b",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/eaf9bce5-7b16-453e-9d05-7ee9f0826eff"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management"
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-S3Backup",
+      "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/daebaksrv-S3Backup",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAXXXXXXXXXXXXXXXXX",
+          "arn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+          "accountId": "111111111111",
+          "userName": "amkcmk-ClumioIAMRole-ase-2"
+        },
+        "attributes": {
+          "creationDate": "2026-10-25T11:36:12Z",
+          "mfaAuthenticated": "false"
+        }
+      },
+      "invokedBy": "fas.s3.amazonaws.com"
+    },
+    "eventTime": "2026-10-25T11:36:56Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "Decrypt",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "fas.s3.amazonaws.com",
+    "requestParameters": {
+      "encryptionAlgorithm": "SYMMETRIC_DEFAULT",
+      "encryptionContext": {
+        "aws:s3:arn": "arn:aws:s3:::amkcmk-s3-111111111111-ap-southeast-2/cmk.txt"
+      }
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "keyMaterialId": "586c383cb5bfac8cc771ed0843088e7a68bcd322385eca73a0d6b2ce7c979023"
+    },
+    "requestID": "79198fac-06ce-44e8-b670-b3875b65b0a0",
+    "eventID": "6696a9e0-e29d-4587-a53d-5b85ff84b79d",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/73899fa8-d367-4215-b442-7ac1b6fc4610"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management"
+  }
+]

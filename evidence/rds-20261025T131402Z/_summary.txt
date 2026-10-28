@@ -1,0 +1,15 @@
+UTC 2026-10-25T13:14:04Z  account 111111111111  region ap-southeast-2
+amkcmk-rds-amk: key alias=alias/aws/rds tag exp=none
+amkcmk-rds-amk: status=available encrypted=true key manager=AWS | Clumio sees it: yes | policy: ours | SecureVault backups: 1
+amkcmk-rds-cmk: key alias=none tag exp=amkcmk
+amkcmk-rds-cmk: status=available encrypted=true key manager=CUSTOMER | Clumio sees it: yes | policy: ours | SecureVault backups: 1
+amk database key manager must be AWS, cmk database key manager must be CUSTOMER, both encrypted.
+SETUP: OK
+Clumio snapshots in this account (database | status | key | shared with):
+  clumio-airgap-encrypted-t4043795459-org00000000000000000|amkcmk-rds-amk|available 100%|222222222222:key/32b305a5-864f-4ee0-96cd-6f7b2a1c8c8e
+  clumio-airgap-encrypted-t4043795565-org00000000000000000|amkcmk-rds-cmk|available 100%|222222222222:key/32b305a5-864f-4ee0-96cd-6f7b2a1c8c8e
+CloudTrail snapshot calls by Clumio's role, last 24h (create / copy / share / delete): 2/2/2/2
+Shared snapshots (restore attribute values): ["222222222222"]
+Clumio tasks (statuses): completed x5
+Calls that did not succeed:
+  none

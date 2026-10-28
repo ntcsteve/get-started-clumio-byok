@@ -1,0 +1,37 @@
+{
+    "Role": {
+        "Path": "/clumio/",
+        "RoleName": "amkcmk-ClumioIAMRole-ase-2",
+        "RoleId": "AROAXXXXXXXXXXXXXXXXX",
+        "Arn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+        "CreateDate": "2026-10-25T11:22:55+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "AWS": "arn:aws:iam::333333333333:role/ClumioCustomerProtectRole"
+                    },
+                    "Action": "sts:AssumeRole",
+                    "Condition": {
+                        "StringEquals": {
+                            "sts:ExternalId": "REDACTED"
+                        }
+                    }
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600,
+        "Tags": [
+            {
+                "Key": "Vendor",
+                "Value": "Clumio"
+            }
+        ],
+        "RoleLastUsed": {
+            "LastUsedDate": "2026-10-25T23:10:29+00:00",
+            "Region": "us-east-1"
+        }
+    }
+}

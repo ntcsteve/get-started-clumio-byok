@@ -1,0 +1,9 @@
+# Never commit state, plans or credentials: state holds the Clumio ExternalId and token.
+*.tfstate
+*.tfstate.*
+tfplan
+*.tfplan
+.terraform/
+lab.auto.tfvars
+.env
+*.pem

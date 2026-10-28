@@ -1,0 +1,4 @@
+{
+    "Arn": "arn:aws:kms:ap-southeast-1:111111111111:key/e25b56b0-d9f8-47fa-8d4a-0ff848ad23b4",
+    "KeyManager": "AWS"
+}

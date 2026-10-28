@@ -1,0 +1,128 @@
+{
+    "Grants": [
+        {
+            "KeyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+            "GrantId": "01aca230964f76e8600939b0b2767eaf1691d07f503afbbe8ca428b7da59617c",
+            "Name": "",
+            "CreationDate": "2026-10-25T20:38:25+08:00",
+            "GranteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+            "RetiringPrincipal": "rds.ap-southeast-2.amazonaws.com",
+            "IssuingAccount": "rds.ap-southeast-2.amazonaws.com",
+            "Operations": [
+                "Decrypt",
+                "Encrypt",
+                "GenerateDataKey",
+                "GenerateDataKeyWithoutPlaintext"
+            ],
+            "Constraints": {
+                "EncryptionContextSubset": {
+                    "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU"
+                }
+            }
+        },
+        {
+            "KeyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+            "GrantId": "4032f7b45fda31b33d6139545e15c7c9d1d255844e348fc2b0651b26ee7e830a",
+            "Name": "ed198de4-2b44-4c3b-8084-3cd32c47ec4e",
+            "CreationDate": "2026-10-25T21:22:44+08:00",
+            "GranteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+            "RetiringPrincipal": "ec2.ap-southeast-2.amazonaws.com",
+            "IssuingAccount": "rds.ap-southeast-2.amazonaws.com",
+            "Operations": [
+                "Decrypt"
+            ],
+            "Constraints": {
+                "EncryptionContextSubset": {
+                    "aws:ebs:id": "vol-0e5d3b3f498a01a38",
+                    "aws:rds:db-id": "db-4UAN35JVVBDODH7WMHT2RVI3VU"
+                }
+            }
+        },
+        {
+            "KeyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+            "GrantId": "6774747a9f21abb697d8eb5d149593bcfbcd96e4159ac46b85daec117856c1c8",
+            "Name": "",
+            "CreationDate": "2026-10-25T21:22:40+08:00",
+            "GranteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+            "RetiringPrincipal": "rds.ap-southeast-2.amazonaws.com",
+            "IssuingAccount": "rds.ap-southeast-2.amazonaws.com",
+            "Operations": [
+                "Decrypt",
+                "Encrypt",
+                "GenerateDataKey",
+                "GenerateDataKeyWithoutPlaintext"
+            ],
+            "Constraints": {
+                "EncryptionContextSubset": {
+                    "aws:rds:db-id": "db-4UAN35JVVBDODH7WMHT2RVI3VU"
+                }
+            }
+        },
+        {
+            "KeyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+            "GrantId": "76197845418655965f3c3112202e583ccbd72ed3a9eaa919914ee5762e8899e4",
+            "Name": "ad6151d3-a2bf-4862-ab5e-8c274f49125e",
+            "CreationDate": "2026-10-25T20:38:28+08:00",
+            "GranteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+            "RetiringPrincipal": "ec2.ap-southeast-2.amazonaws.com",
+            "IssuingAccount": "rds.ap-southeast-2.amazonaws.com",
+            "Operations": [
+                "Decrypt"
+            ],
+            "Constraints": {
+                "EncryptionContextSubset": {
+                    "aws:ebs:id": "vol-013048a1a1a0243d1",
+                    "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU"
+                }
+            }
+        },
+        {
+            "KeyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+            "GrantId": "c13a40415a133199eea9f8ee6de836c5f03556089ed37d9a407023aea083d92f",
+            "Name": "",
+            "CreationDate": "2026-10-25T21:22:05+08:00",
+            "GranteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+            "RetiringPrincipal": "rds.ap-southeast-2.amazonaws.com",
+            "IssuingAccount": "arn:aws:iam::111111111111:root",
+            "Operations": [
+                "Decrypt",
+                "Encrypt",
+                "GenerateDataKey",
+                "GenerateDataKeyWithoutPlaintext",
+                "ReEncryptFrom",
+                "ReEncryptTo",
+                "CreateGrant",
+                "DescribeKey"
+            ],
+            "Constraints": {
+                "EncryptionContextSubset": {
+                    "aws:rds:db-id": "db-4UAN35JVVBDODH7WMHT2RVI3VU"
+                }
+            }
+        },
+        {
+            "KeyId": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+            "GrantId": "e69151e7ff2c4c789a7341d20ae1cefb444544641aee43ebe056e80d4c012bc2",
+            "Name": "",
+            "CreationDate": "2026-10-25T20:37:49+08:00",
+            "GranteePrincipal": "rds.ap-southeast-2.amazonaws.com",
+            "RetiringPrincipal": "rds.ap-southeast-2.amazonaws.com",
+            "IssuingAccount": "arn:aws:iam::111111111111:root",
+            "Operations": [
+                "Decrypt",
+                "Encrypt",
+                "GenerateDataKey",
+                "GenerateDataKeyWithoutPlaintext",
+                "ReEncryptFrom",
+                "ReEncryptTo",
+                "CreateGrant",
+                "DescribeKey"
+            ],
+            "Constraints": {
+                "EncryptionContextSubset": {
+                    "aws:rds:db-id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU"
+                }
+            }
+        }
+    ]
+}

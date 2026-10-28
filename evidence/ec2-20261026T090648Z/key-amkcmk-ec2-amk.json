@@ -1,0 +1,5 @@
+{
+    "Arn": "arn:aws:kms:ap-southeast-2:111111111111:key/e8e3ab17-dd45-4621-9916-72e7927110aa",
+    "KeyManager": "AWS",
+    "KeyState": "Enabled"
+}

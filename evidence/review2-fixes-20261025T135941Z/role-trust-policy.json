@@ -1,0 +1,20 @@
+{
+  "RoleName": "amkcmk-ClumioIAMRole-ase-2",
+  "AssumeRolePolicyDocument": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::333333333333:role/ClumioCustomerProtectRole"
+        },
+        "Action": "sts:AssumeRole",
+        "Condition": {
+          "StringEquals": {
+            "sts:ExternalId": "REDACTED"
+          }
+        }
+      }
+    ]
+  }
+}

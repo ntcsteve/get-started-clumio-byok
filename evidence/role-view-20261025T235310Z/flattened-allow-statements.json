@@ -1,0 +1,712 @@
+[
+  {
+    "service": "sns",
+    "action": "sns:ListTagsForResource",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "sns",
+    "action": "sns:ListSubscriptionsByTopic",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "sns",
+    "action": "sns:GetTopicAttributes",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "sns",
+    "action": "sns:GetDataProtectionPolicy",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "iam",
+    "action": "iam:SimulatePrincipalPolicy",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "iam",
+    "action": "iam:ListRoleTags",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "iam",
+    "action": "iam:ListRolePolicies",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "iam",
+    "action": "iam:ListInstanceProfilesForRole",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "iam",
+    "action": "iam:ListAttachedRolePolicies",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "iam",
+    "action": "iam:GetServiceLinkedRoleDeletionStatus",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "iam",
+    "action": "iam:GetRolePolicy",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "iam",
+    "action": "iam:GetRole",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "iam",
+    "action": "iam:GetContextKeysForPrincipalPolicy",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "events",
+    "action": "events:ListTargetsByRule",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "events",
+    "action": "events:ListTagsForResource",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "events",
+    "action": "events:DescribeRule",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "events",
+    "action": "events:DescribeEventBus",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "backup",
+    "action": "backup:ListProtectedResources",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "backup",
+    "action": "backup:ListBackupVaults",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "backup",
+    "action": "backup:ListRecoveryPointsByBackupVault",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "backup",
+    "action": "backup:DescribeRecoveryPoint",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBClusters",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBClusterSnapshots",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBClusterSnapshotAttributes",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBInstances",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBInstanceAutomatedBackups",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBSnapshotAttributes",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBSnapshots",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeGlobalClusters",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeOptionGroups",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeOptionGroupOptions",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:ListTagsForResource",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "cloudwatch",
+    "action": "cloudwatch:GetMetricStatistics",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:ListAllMyBuckets",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetReplicationConfiguration",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetMetricsConfiguration",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetLifecycleConfiguration",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetEncryptionConfiguration",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetBucketVersioning",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetBucketTagging",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetBucketPublicAccessBlock",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetBucketPolicy",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetBucketObjectLockConfiguration",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetBucketLogging",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetBucketLocation",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "backup",
+    "action": "backup:ListProtectedResources",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetMultiRegionAccessPoint",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "s3",
+    "action": "s3:ListMultiRegionAccessPoints",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:PutStorageLensConfigurationTagging",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "s3",
+    "action": "s3:PutStorageLensConfiguration",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "s3",
+    "action": "s3:ListStorageLensConfigurations",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetStorageLensConfigurationTagging",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetStorageLensConfiguration",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "s3",
+    "action": "s3:DeleteStorageLensConfiguration",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "cloudwatch",
+    "action": "cloudwatch:GetMetricStatistics",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "kms",
+    "action": "kms:ReEncrypt*",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "kms",
+    "action": "kms:GenerateDataKey*",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "kms",
+    "action": "kms:Encrypt",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "kms",
+    "action": "kms:DescribeKey",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "kms",
+    "action": "kms:Decrypt",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "iam",
+    "action": "iam:ListAccountAliases",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "organizations",
+    "action": "organizations:DescribeOrganization",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "account",
+    "action": "account:ListRegions",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "account",
+    "action": "account:GetRegionOptStatus",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "sts",
+    "action": "sts:DecodeAuthorizationMessage",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "rds",
+    "action": "rds:ModifyDBClusterSnapshotAttribute",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:CopyDBClusterSnapshot",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:ModifyDBSnapshotAttribute",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:CopyDBSnapshot",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:CreateDBClusterSnapshot",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBClusterSnapshots",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:CreateDBSnapshot",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBSubnetGroups",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:AddTagsToResource",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:ModifyOptionGroup",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:ModifyDBCluster",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:ModifyDBInstance",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "ec2",
+    "action": "ec2:DescribeSecurityGroups",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "rds",
+    "action": "rds:ListTagsForResource",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DeleteDBClusterSnapshot",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DeleteDBSnapshot",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "kms",
+    "action": "kms:CreateGrant",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "rds",
+    "action": "rds:CopyDBClusterSnapshot",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:CopyDBSnapshot",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBSubnetGroups",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DeleteDBClusterSnapshot",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DeleteDBSnapshot",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "rds",
+    "action": "rds:ListTagsForResource",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:CreateDBInstance",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBParameterGroups",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DescribeDBClusterParameterGroups",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:CreateDBParameterGroup",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:CreateDBClusterParameterGroup",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:RestoreDBInstanceFromDBSnapshot",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:RestoreDBInstanceToPointInTime",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:RestoreDBClusterFromSnapshot",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:RestoreDBClusterToPointInTime",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:RemoveTagsFromResource",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:AddTagsToResource",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:CreateOptionGroup",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:CreateDBInstanceReadReplica",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DeleteDBCluster",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:DeleteDBInstance",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:AddRoleToDBCluster",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "rds",
+    "action": "rds:AddRoleToDBInstance",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "iam",
+    "action": "iam:PassRole",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "kms",
+    "action": "kms:CreateGrant",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "cloudwatch",
+    "action": "cloudwatch:GetMetricStatistics",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:PutObjectTagging",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "s3",
+    "action": "s3:PutObjectAcl",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "s3",
+    "action": "s3:PutObject",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "s3",
+    "action": "s3:ListBucket",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "organizations",
+    "action": "organizations:DescribeOrganization",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:PutInventoryConfiguration",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:ListBucketVersions",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:ListBucketMultipartUploads",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:ListBucket",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetObjectVersionTagging",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetObjectVersion",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetObjectTagging",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetObject",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetInventoryConfiguration",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:PutBucketNotification",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetBucketNotification",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "events",
+    "action": "events:RemoveTargets",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "events",
+    "action": "events:PutTargets",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "events",
+    "action": "events:PutRule",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "events",
+    "action": "events:ListTargetsByRule",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "events",
+    "action": "events:DescribeRule",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "events",
+    "action": "events:DeleteRule",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "iam",
+    "action": "iam:PassRole",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "s3",
+    "action": "s3:PutObjectTagging",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:PutObjectAcl",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:PutObject",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:DeleteObject",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:AbortMultipartUpload",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:ListBucketVersions",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetObjectTagging",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetObject",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetBucketVersioning",
+    "scope": "WILDCARD"
+  },
+  {
+    "service": "s3",
+    "action": "s3:ListBucket",
+    "scope": "ACCOUNT-SCOPED"
+  },
+  {
+    "service": "s3",
+    "action": "s3:GetObject",
+    "scope": "ACCOUNT-SCOPED"
+  }
+]

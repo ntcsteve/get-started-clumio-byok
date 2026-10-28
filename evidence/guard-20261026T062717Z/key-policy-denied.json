@@ -1,0 +1,34 @@
+{
+  "Version" : "2012-10-17",
+  "Statement" : [ {
+    "Sid" : "AdministerButDoNotUse",
+    "Effect" : "Allow",
+    "Principal" : {
+      "AWS" : "arn:aws:iam::111111111111:root"
+    },
+    "Action" : [ "kms:Update*", "kms:UntagResource", "kms:TagResource", "kms:ScheduleKeyDeletion", "kms:Revoke*", "kms:Put*", "kms:List*", "kms:Get*", "kms:Enable*", "kms:Disable*", "kms:Describe*", "kms:Delete*", "kms:Create*", "kms:CancelKeyDeletion" ],
+    "Resource" : "*"
+  }, {
+    "Sid" : "UploadThroughS3Only",
+    "Effect" : "Allow",
+    "Principal" : {
+      "AWS" : "arn:aws:iam::111111111111:root"
+    },
+    "Action" : [ "kms:GenerateDataKey*", "kms:Encrypt" ],
+    "Resource" : "*",
+    "Condition" : {
+      "StringEquals" : {
+        "kms:ViaService" : "s3.ap-southeast-2.amazonaws.com",
+        "kms:CallerAccount" : "111111111111"
+      }
+    }
+  }, {
+    "Sid" : "ClumioRoleIsDenied",
+    "Effect" : "Deny",
+    "Principal" : {
+      "AWS" : "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2"
+    },
+    "Action" : "kms:*",
+    "Resource" : "*"
+  } ]
+}

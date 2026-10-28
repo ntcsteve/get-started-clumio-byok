@@ -1,0 +1,40 @@
+{
+  "source": {
+    "backup_id": "0182dff3-d117-11f1-88aa-ea9dfaa90a15_2026-10-26T08:30:54Z.4047398686"
+  },
+  "target": {
+    "instance_restore_target": {
+      "environment_id": "33333333-3333-3333-3333-333333333333",
+      "aws_az": "ap-southeast-2b",
+      "subnet_native_id": "subnet-0cc259499f154e398",
+      "vpc_native_id": "vpc-0ad7c042315c2c747",
+      "should_power_on": true,
+      "ebs_block_device_mappings": [
+        {
+          "name": "/dev/xvda",
+          "volume_native_id": "vol-050342df86ecac887"
+        }
+      ],
+      "network_interfaces": [
+        {
+          "device_index": 0,
+          "restore_default": true,
+          "subnet_native_id": "subnet-0cc259499f154e398",
+          "security_group_native_ids": [
+            "sg-07374a4db8b066f44"
+          ]
+        }
+      ],
+      "tags": [
+        {
+          "key": "exp",
+          "value": "amkcmk"
+        },
+        {
+          "key": "Name",
+          "value": "amkcmk-ec2-amk-r1"
+        }
+      ]
+    }
+  }
+}

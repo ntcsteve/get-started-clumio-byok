@@ -1,0 +1,38 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "sns:ListTagsForResource",
+                "sns:ListSubscriptionsByTopic",
+                "sns:GetTopicAttributes",
+                "sns:GetDataProtectionPolicy",
+                "iam:SimulatePrincipalPolicy",
+                "iam:ListRoleTags",
+                "iam:ListRolePolicies",
+                "iam:ListInstanceProfilesForRole",
+                "iam:ListAttachedRolePolicies",
+                "iam:GetServiceLinkedRoleDeletionStatus",
+                "iam:GetRolePolicy",
+                "iam:GetRole",
+                "iam:GetContextKeysForPrincipalPolicy",
+                "events:ListTargetsByRule",
+                "events:ListTagsForResource",
+                "events:DescribeRule",
+                "events:DescribeEventBus"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:sns:ap-southeast-2:111111111111:ClumioInventoryTopic_22222222-2222-2222-2222-222222222222",
+                "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+                "arn:aws:events:ap-southeast-2:111111111111:rule/ClumioTagCloudwatchRule_22222222-2222-2222-2222-222222222222",
+                "arn:aws:events:ap-southeast-2:111111111111:rule/ClumioS3CloudtrailEventRule_22222222-2222-2222-2222-222222222222",
+                "arn:aws:events:ap-southeast-2:111111111111:rule/ClumioS3AWSBackupCWRule_22222222-2222-2222-2222-222222222222",
+                "arn:aws:events:ap-southeast-2:111111111111:rule/ClumioRDSCloudwatchRule_22222222-2222-2222-2222-222222222222",
+                "arn:aws:events:ap-southeast-2:111111111111:rule/ClumioRDSCloudtrailRule_22222222-2222-2222-2222-222222222222",
+                "arn:aws:events:ap-southeast-2:111111111111:rule/ClumioRDSAWSBackupCWRule_22222222-2222-2222-2222-222222222222"
+            ],
+            "Sid": "ReflectOnClumioCfnStack"
+        }
+    ]
+}

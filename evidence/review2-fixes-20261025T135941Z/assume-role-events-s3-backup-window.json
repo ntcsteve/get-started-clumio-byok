@@ -1,0 +1,436 @@
+[
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSAccount",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-S3Backup",
+      "accountId": "333333333333"
+    },
+    "eventTime": "2026-10-25T11:36:12Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "APN/1.0 Commvault/1.0 CDF/1.0 APN_1.1/pc_2ny70dnijzyz2rzi9fdofo2ux$ aws-sdk-go-v2/1.47.3 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/sts#1.51.4 m/i",
+    "requestParameters": {
+      "roleArn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+      "roleSessionName": "daebaksrv-S3Backup",
+      "durationSeconds": 3600,
+      "externalId": "REDACTED"
+    },
+    "responseElements": {
+      "credentials": {
+        "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+        "sessionToken": "REDACTED",
+        "expiration": "2026-10-25T12:36:12Z"
+      },
+      "assumedRoleUser": {
+        "assumedRoleId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-S3Backup",
+        "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/daebaksrv-S3Backup"
+      },
+      "packedPolicySize": 18,
+      "sessionTokenUtilization": 18,
+      "sessionTokenSize": 772
+    },
+    "additionalEventData": {
+      "ExtendedRequestId": "MTphcC1zb3V0aGVhc3QtMjpTOjE3OTI5MjgxNzI4MDc6Ujo5N252R21nWA==",
+      "RequestDetails": {
+        "awsServingRegion": "ap-southeast-2",
+        "endpointType": "regional"
+      }
+    },
+    "requestID": "68dc0c73-0c4e-40e9-a8f4-0e4ca7efc7b9",
+    "eventID": "39c5b3a3-6a6f-3677-999c-83cc9b641d21",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::IAM::Role",
+        "ARN": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "2ece0d34-ce60-4ec6-9413-1619373b3c78",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSAccount",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-createS3CustomerSession",
+      "accountId": "333333333333"
+    },
+    "eventTime": "2026-10-25T11:35:54Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "APN/1.0 Commvault/1.0 CDF/1.0 APN_1.1/pc_2ny70dnijzyz2rzi9fdofo2ux$ aws-sdk-go-v2/1.47.3 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/sts#1.51.4 m/i",
+    "requestParameters": {
+      "roleArn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+      "roleSessionName": "daebaksrv-createS3CustomerSession",
+      "durationSeconds": 3600,
+      "externalId": "REDACTED"
+    },
+    "responseElements": {
+      "credentials": {
+        "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+        "sessionToken": "REDACTED",
+        "expiration": "2026-10-25T12:35:54Z"
+      },
+      "assumedRoleUser": {
+        "assumedRoleId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-createS3CustomerSession",
+        "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/daebaksrv-createS3CustomerSession"
+      },
+      "packedPolicySize": 19,
+      "sessionTokenUtilization": 19,
+      "sessionTokenSize": 792
+    },
+    "additionalEventData": {
+      "ExtendedRequestId": "MTphcC1zb3V0aGVhc3QtMjpTOjE3OTI5MjgxNTQ0NjM6UjpSbXdpaHY5ZA==",
+      "RequestDetails": {
+        "endpointType": "regional",
+        "awsServingRegion": "ap-southeast-2"
+      }
+    },
+    "requestID": "ac2696ef-c00f-45fd-80f4-96dcc52db92d",
+    "eventID": "683d2416-f257-3a09-b8e4-15ff7d4bb64b",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::IAM::Role",
+        "ARN": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "818017ea-9a9c-4cea-86b2-9b4bf51edd02",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSAccount",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-createS3CustomerSession",
+      "accountId": "333333333333"
+    },
+    "eventTime": "2026-10-25T11:35:35Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "APN/1.0 Commvault/1.0 CDF/1.0 APN_1.1/pc_2ny70dnijzyz2rzi9fdofo2ux$ aws-sdk-go-v2/1.47.3 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/sts#1.51.4 m/i",
+    "requestParameters": {
+      "roleArn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+      "roleSessionName": "daebaksrv-createS3CustomerSession",
+      "durationSeconds": 3600,
+      "externalId": "REDACTED"
+    },
+    "responseElements": {
+      "credentials": {
+        "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+        "sessionToken": "REDACTED",
+        "expiration": "2026-10-25T12:35:35Z"
+      },
+      "assumedRoleUser": {
+        "assumedRoleId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-createS3CustomerSession",
+        "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/daebaksrv-createS3CustomerSession"
+      },
+      "packedPolicySize": 19,
+      "sessionTokenUtilization": 19,
+      "sessionTokenSize": 792
+    },
+    "additionalEventData": {
+      "ExtendedRequestId": "MTphcC1zb3V0aGVhc3QtMjpTOjE3OTI5MjgxMzU5MDM6UjpFSW5yRlJpQw==",
+      "RequestDetails": {
+        "awsServingRegion": "ap-southeast-2",
+        "endpointType": "regional"
+      }
+    },
+    "requestID": "ba8daf9b-630f-45cf-b50d-709fefa555dc",
+    "eventID": "e06973e9-c354-3b61-9f04-21db3bc1aa76",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::IAM::Role",
+        "ARN": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "fcda3527-f0c1-47cf-8d98-8c6f0f873eab",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSAccount",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-createS3CustomerSession",
+      "accountId": "333333333333"
+    },
+    "eventTime": "2026-10-25T11:35:32Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "APN/1.0 Commvault/1.0 CDF/1.0 APN_1.1/pc_2ny70dnijzyz2rzi9fdofo2ux$ aws-sdk-go-v2/1.47.3 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/sts#1.51.4 m/i",
+    "requestParameters": {
+      "roleArn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+      "roleSessionName": "daebaksrv-createS3CustomerSession",
+      "durationSeconds": 3600,
+      "externalId": "REDACTED"
+    },
+    "responseElements": {
+      "credentials": {
+        "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+        "sessionToken": "REDACTED",
+        "expiration": "2026-10-25T12:35:32Z"
+      },
+      "assumedRoleUser": {
+        "assumedRoleId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-createS3CustomerSession",
+        "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/daebaksrv-createS3CustomerSession"
+      },
+      "packedPolicySize": 19,
+      "sessionTokenUtilization": 19,
+      "sessionTokenSize": 792
+    },
+    "additionalEventData": {
+      "ExtendedRequestId": "MTphcC1zb3V0aGVhc3QtMjpTOjE3OTI5MjgxMzIxMDk6UjpQWnd1cHNueQ==",
+      "RequestDetails": {
+        "endpointType": "regional",
+        "awsServingRegion": "ap-southeast-2"
+      }
+    },
+    "requestID": "6a4341de-d5ae-40f0-853a-37e049dcbdf3",
+    "eventID": "12c85b2c-7e3a-302d-803f-034a9f02d50d",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::IAM::Role",
+        "ARN": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "28171d03-3c42-4218-ad9c-b2cfa8545749",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSAccount",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-S3Backup",
+      "accountId": "333333333333"
+    },
+    "eventTime": "2026-10-25T11:35:24Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "APN/1.0 Commvault/1.0 CDF/1.0 APN_1.1/pc_2ny70dnijzyz2rzi9fdofo2ux$ aws-sdk-go-v2/1.47.3 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/sts#1.51.4 m/i",
+    "requestParameters": {
+      "roleArn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+      "roleSessionName": "daebaksrv-S3Backup",
+      "durationSeconds": 3600,
+      "externalId": "REDACTED"
+    },
+    "responseElements": {
+      "credentials": {
+        "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+        "sessionToken": "REDACTED",
+        "expiration": "2026-10-25T12:35:24Z"
+      },
+      "assumedRoleUser": {
+        "assumedRoleId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-S3Backup",
+        "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/daebaksrv-S3Backup"
+      },
+      "packedPolicySize": 18,
+      "sessionTokenUtilization": 18,
+      "sessionTokenSize": 772
+    },
+    "additionalEventData": {
+      "ExtendedRequestId": "MTphcC1zb3V0aGVhc3QtMjpTOjE3OTI5MjgxMjQ1MDI6Ujp0VHU4N1N2bQ==",
+      "RequestDetails": {
+        "endpointType": "regional",
+        "awsServingRegion": "ap-southeast-2"
+      }
+    },
+    "requestID": "5dc154f1-9fa0-413f-9560-d1df2be91268",
+    "eventID": "54354b66-45f2-37c1-b5b9-387ba7fbb3f5",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::IAM::Role",
+        "ARN": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "c9959765-ee3b-4ece-b589-923cb3c3e6ab",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSAccount",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-createS3CustomerSession",
+      "accountId": "333333333333"
+    },
+    "eventTime": "2026-10-25T11:35:22Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "APN/1.0 Commvault/1.0 CDF/1.0 APN_1.1/pc_2ny70dnijzyz2rzi9fdofo2ux$ aws-sdk-go-v2/1.47.3 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/sts#1.51.4 m/i",
+    "requestParameters": {
+      "roleArn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+      "roleSessionName": "daebaksrv-createS3CustomerSession",
+      "durationSeconds": 3600,
+      "externalId": "REDACTED"
+    },
+    "responseElements": {
+      "credentials": {
+        "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+        "sessionToken": "REDACTED",
+        "expiration": "2026-10-25T12:35:22Z"
+      },
+      "assumedRoleUser": {
+        "assumedRoleId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-createS3CustomerSession",
+        "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/daebaksrv-createS3CustomerSession"
+      },
+      "packedPolicySize": 19,
+      "sessionTokenUtilization": 19,
+      "sessionTokenSize": 792
+    },
+    "additionalEventData": {
+      "ExtendedRequestId": "MTphcC1zb3V0aGVhc3QtMjpTOjE3OTI5MjgxMjI2MjQ6UjplbFhzOW42OA==",
+      "RequestDetails": {
+        "endpointType": "regional",
+        "awsServingRegion": "ap-southeast-2"
+      }
+    },
+    "requestID": "50410173-a255-437d-99e9-e965ad9b665d",
+    "eventID": "a20062bf-3552-3e9e-ac61-f33854c320e2",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::IAM::Role",
+        "ARN": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "44d7dd2d-5964-401b-b94c-f2be915e11ed",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AWSAccount",
+      "principalId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-createS3CustomerSession",
+      "accountId": "333333333333"
+    },
+    "eventTime": "2026-10-25T11:32:20Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "APN/1.0 Commvault/1.0 CDF/1.0 APN_1.1/pc_2ny70dnijzyz2rzi9fdofo2ux$ aws-sdk-go-v2/1.47.3 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/sts#1.51.4 m/i",
+    "requestParameters": {
+      "roleArn": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2",
+      "roleSessionName": "daebaksrv-createS3CustomerSession",
+      "durationSeconds": 3600,
+      "externalId": "REDACTED"
+    },
+    "responseElements": {
+      "credentials": {
+        "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+        "sessionToken": "REDACTED",
+        "expiration": "2026-10-25T12:32:20Z"
+      },
+      "assumedRoleUser": {
+        "assumedRoleId": "AROAXXXXXXXXXXXXXXXXX:daebaksrv-createS3CustomerSession",
+        "arn": "arn:aws:sts::111111111111:assumed-role/amkcmk-ClumioIAMRole-ase-2/daebaksrv-createS3CustomerSession"
+      },
+      "packedPolicySize": 19,
+      "sessionTokenUtilization": 19,
+      "sessionTokenSize": 792
+    },
+    "additionalEventData": {
+      "ExtendedRequestId": "MTphcC1zb3V0aGVhc3QtMjpTOjE3OTI5Mjc5NDA2NzE6Ujo0RHhwalpJVQ==",
+      "RequestDetails": {
+        "endpointType": "regional",
+        "awsServingRegion": "ap-southeast-2"
+      }
+    },
+    "requestID": "3df5acd5-ebc5-49ea-9688-629809ce38f9",
+    "eventID": "f82b9d6e-9a3b-3c6e-ba38-8078a596a3d6",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::IAM::Role",
+        "ARN": "arn:aws:iam::111111111111:role/clumio/amkcmk-ClumioIAMRole-ase-2"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "sharedEventID": "ebdb4c26-aaf8-49a0-8efc-729f434ccc2a",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  }
+]

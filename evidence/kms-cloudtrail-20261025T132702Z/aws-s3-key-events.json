@@ -1,0 +1,230 @@
+[
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T11:38:32Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "DescribeKey",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/AD,AC,Z,b,E cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.describe-key",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/eaf9bce5-7b16-453e-9d05-7ee9f0826eff"
+    },
+    "responseElements": null,
+    "requestID": "61a778ff-c049-4937-9bd8-b3f342307b31",
+    "eventID": "086bde1f-e26b-4657-9b1e-2156459696f5",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/eaf9bce5-7b16-453e-9d05-7ee9f0826eff"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T11:37:27Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "ListAliases",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/E,AC,AD,C,b,Z cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.list-aliases",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/eaf9bce5-7b16-453e-9d05-7ee9f0826eff"
+    },
+    "responseElements": null,
+    "requestID": "0946db8b-25f0-4508-bac9-c56d0d66cc94",
+    "eventID": "3608eed7-5af9-49a4-9c1a-fc48e342d4cf",
+    "readOnly": true,
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T11:37:26Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "DescribeKey",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/AC,Z,E,b,AD cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.describe-key",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/eaf9bce5-7b16-453e-9d05-7ee9f0826eff"
+    },
+    "responseElements": null,
+    "requestID": "09303bc2-7325-4fe5-ae56-f88238cee436",
+    "eventID": "27ddc46a-260c-436d-bf9c-a02239de3911",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/eaf9bce5-7b16-453e-9d05-7ee9f0826eff"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T11:32:35Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "DescribeKey",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/b,Z,E,AC,AD cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.describe-key",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/eaf9bce5-7b16-453e-9d05-7ee9f0826eff"
+    },
+    "responseElements": null,
+    "requestID": "fc397502-8093-4e49-b602-b976ffbf523b",
+    "eventID": "204cefd0-be0a-44f5-b5ab-6f16c7a1dbf1",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/eaf9bce5-7b16-453e-9d05-7ee9f0826eff"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  },
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "111111111111",
+      "arn": "arn:aws:iam::111111111111:root",
+      "accountId": "111111111111",
+      "accessKeyId": "ASIAXXXXXXXXXXXXXXXX",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-10-25T10:58:13Z",
+          "mfaAuthenticated": "true"
+        },
+        "signInSessionArn": "arn:aws:signin:ap-southeast-1:111111111111:session/00000000-0000-0000-0000-000000000000"
+      }
+    },
+    "eventTime": "2026-10-25T11:29:47Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "DescribeKey",
+    "awsRegion": "ap-southeast-2",
+    "sourceIPAddress": "198.51.100.1",
+    "userAgent": "aws-cli/2.34.41 md/awscrt#0.32.2 ua/2.1 os/macos#25.4.0 md/arch#arm64 lang/python#3.14.4 md/pyimpl#CPython m/AC,b,E,Z,AD cfg/retry-mode#standard md/installer#source md/prompt#off md/command#kms.describe-key",
+    "requestParameters": {
+      "keyId": "arn:aws:kms:ap-southeast-2:111111111111:key/eaf9bce5-7b16-453e-9d05-7ee9f0826eff"
+    },
+    "responseElements": null,
+    "requestID": "d9ed0bce-5687-492c-900b-493585a59ba5",
+    "eventID": "0d78f4ea-6c73-4d2b-8b8d-3fe4aa3d54cf",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "111111111111",
+        "type": "AWS::KMS::Key",
+        "ARN": "arn:aws:kms:ap-southeast-2:111111111111:key/eaf9bce5-7b16-453e-9d05-7ee9f0826eff"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111111111111",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_256_GCM_SHA384",
+      "clientProvidedHostHeader": "kms.ap-southeast-2.amazonaws.com",
+      "keyExchange": "X25519MLKEM768"
+    }
+  }
+]

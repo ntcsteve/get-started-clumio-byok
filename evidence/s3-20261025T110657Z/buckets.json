@@ -1,0 +1,27 @@
+{
+  "current_count": 0,
+  "limit": 100,
+  "start": "1",
+  "total_count": 0,
+  "total_pages_count": 1,
+  "_links": {
+    "_self": {
+      "href": "/datasources/aws/s3-buckets?filter=%7B%22account_native_id%22:%7B%22$eq%22:%22111111111111%22%7D%7D&limit=200",
+      "type": "get",
+      "templated": false
+    },
+    "_first": {
+      "href": "/datasources/aws/s3-buckets?filter=%7B%22account_native_id%22%3A%7B%22%24eq%22%3A%22111111111111%22%7D%7D&limit=200&start=1",
+      "type": "get",
+      "templated": false
+    },
+    "_last": {
+      "href": "/datasources/aws/s3-buckets?filter=%7B%22account_native_id%22%3A%7B%22%24eq%22%3A%22111111111111%22%7D%7D&limit=200&start=1",
+      "type": "get",
+      "templated": false
+    }
+  },
+  "_embedded": {
+    "items": []
+  }
+}

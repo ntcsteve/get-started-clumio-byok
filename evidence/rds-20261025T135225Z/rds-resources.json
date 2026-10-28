@@ -1,0 +1,398 @@
+{
+  "current_count": 4,
+  "limit": 100,
+  "start": "1",
+  "total_count": 4,
+  "total_pages_count": 1,
+  "_links": {
+    "_self": {
+      "href": "/datasources/aws/rds-resources?filter=%7B%22account_native_id%22:%7B%22$eq%22:%22111111111111%22%7D%7D&limit=200",
+      "type": "get",
+      "templated": false
+    },
+    "_first": {
+      "href": "/datasources/aws/rds-resources?filter=%7B%22account_native_id%22%3A%7B%22%24eq%22%3A%22111111111111%22%7D%7D&limit=200&start=1",
+      "type": "get",
+      "templated": false
+    },
+    "_last": {
+      "href": "/datasources/aws/rds-resources?filter=%7B%22account_native_id%22%3A%7B%22%24eq%22%3A%22111111111111%22%7D%7D&limit=200&start=1",
+      "type": "get",
+      "templated": false
+    }
+  },
+  "_embedded": {
+    "items": [
+      {
+        "id": "e9d53670-d071-11f1-87a1-2e06e99bf6a4",
+        "type": "aws_rds_instance",
+        "environment_id": "33333333-3333-3333-3333-333333333333",
+        "is_encrypted": true,
+        "is_deleted": false,
+        "is_supported": true,
+        "protection_status": "protected",
+        "last_clumio_snapshot_timestamp": "2026-10-25T12:50:53Z",
+        "last_granular_backup_timestamp": null,
+        "first_clumio_snapshot_timestamp": "2026-10-25T12:50:53Z",
+        "first_granular_backup_timestamp": null,
+        "deletion_timestamp": null,
+        "protection_info": {
+          "policy_id": "cae81f60-5ca3-48eb-8fc2-accfc22d4830",
+          "inheriting_entity_id": null,
+          "inheriting_entity_type": null,
+          "rule_id": "021e44f6-e53d-47b8-b215-1f33d521c018"
+        },
+        "size": 21474836480,
+        "engine": "postgres",
+        "engine_version": "18.3",
+        "engine_mode": "provisioned",
+        "tags": [
+          {
+            "key": "exp",
+            "value": "amkcmk",
+            "id": "6abc4dc7-d067-11f1-aed6-123d2b1429ac",
+            "key_id": "6abac0d0-d067-11f1-aed6-123d2b1429ac"
+          }
+        ],
+        "earliest_aws_snapshot_restorable_timestamp": null,
+        "latest_aws_snapshot_restorable_timestamp": null,
+        "unsupported_reason": "",
+        "name": "amkcmk-rds-amk",
+        "resource_native_id": "db-DNF3ILUWHIR35WT6AXO2B6OCKI",
+        "account_native_id": "111111111111",
+        "aws_region": "ap-southeast-2",
+        "aws_azs": [
+          "ap-southeast-2a"
+        ],
+        "is_multi_az": false,
+        "kms_key_native_id": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7",
+        "subnet_group_name": "default",
+        "security_group_native_ids": [
+          "sg-07374a4db8b066f44"
+        ],
+        "organizational_unit_id": "00000000-0000-0000-0000-000000000000",
+        "direct_assignment_policy_id": "",
+        "has_direct_assignment": false,
+        "backup_status_info": {
+          "backup_status": "unknown",
+          "last_successful_policy_start_timestamp": "2026-10-25T12:50:18Z",
+          "last_failed_policy_start_timestamp": "",
+          "operation_info_list": [
+            {
+              "operation": "aws_rds_resource_rolling_backup",
+              "backup_status": "unknown",
+              "last_successful_policy_start_timestamp": "2026-10-25T12:50:18Z",
+              "last_failed_policy_start_timestamp": ""
+            }
+          ]
+        },
+        "_links": {
+          "_self": {
+            "href": "/datasources/aws/rds-resources/e9d53670-d071-11f1-87a1-2e06e99bf6a4",
+            "type": "get",
+            "templated": false
+          },
+          "read-policy-definition": {
+            "href": "/policies/definitions/cae81f60-5ca3-48eb-8fc2-accfc22d4830",
+            "type": "get",
+            "templated": false
+          },
+          "read-policy-summary": {
+            "href": "/policies/definitions/cae81f60-5ca3-48eb-8fc2-accfc22d4830/summary",
+            "type": "get",
+            "templated": false
+          },
+          "create-backup-aws-rds-resource": {
+            "href": "/backups/aws/rds-resources",
+            "type": "post",
+            "templated": false
+          },
+          "list-backup-aws-rds-resources": {
+            "href": "/backups/aws/rds-resources",
+            "type": "get",
+            "templated": false
+          },
+          "list-rds-restored-records": {
+            "href": "/restores/aws/rds-resources/records",
+            "type": "get",
+            "templated": false
+          },
+          "restore-aws-rds-resource": {
+            "href": "/restores/aws/rds-resources",
+            "type": "post",
+            "templated": false
+          },
+          "read-policy-rule": {
+            "href": "/policies/rules/021e44f6-e53d-47b8-b215-1f33d521c018",
+            "type": "get",
+            "templated": false
+          }
+        }
+      },
+      {
+        "id": "36d5eb85-d078-11f1-87a1-2e06e99bf6a4",
+        "type": "aws_rds_instance",
+        "environment_id": "33333333-3333-3333-3333-333333333333",
+        "is_encrypted": true,
+        "is_deleted": false,
+        "is_supported": true,
+        "protection_status": "unprotected",
+        "last_clumio_snapshot_timestamp": null,
+        "last_granular_backup_timestamp": null,
+        "first_clumio_snapshot_timestamp": null,
+        "first_granular_backup_timestamp": null,
+        "deletion_timestamp": null,
+        "protection_info": null,
+        "size": 21474836480,
+        "engine": "postgres",
+        "engine_version": "18.3",
+        "engine_mode": "provisioned",
+        "tags": [
+          {
+            "key": "exp",
+            "value": "amkcmk",
+            "id": "6abc4dc7-d067-11f1-aed6-123d2b1429ac",
+            "key_id": "6abac0d0-d067-11f1-aed6-123d2b1429ac"
+          }
+        ],
+        "earliest_aws_snapshot_restorable_timestamp": null,
+        "latest_aws_snapshot_restorable_timestamp": null,
+        "unsupported_reason": "",
+        "name": "amkcmk-rds-amk-r1",
+        "resource_native_id": "db-VD6CPTIIS6WYWPZ7J4CNGB53SQ",
+        "account_native_id": "111111111111",
+        "aws_region": "ap-southeast-2",
+        "aws_azs": [
+          "ap-southeast-2b"
+        ],
+        "is_multi_az": false,
+        "kms_key_native_id": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7",
+        "subnet_group_name": "default",
+        "security_group_native_ids": [
+          "sg-07374a4db8b066f44"
+        ],
+        "organizational_unit_id": "00000000-0000-0000-0000-000000000000",
+        "direct_assignment_policy_id": "",
+        "has_direct_assignment": false,
+        "backup_status_info": {
+          "backup_status": "unknown",
+          "last_successful_policy_start_timestamp": "",
+          "last_failed_policy_start_timestamp": "",
+          "operation_info_list": null
+        },
+        "_links": {
+          "_self": {
+            "href": "/datasources/aws/rds-resources/36d5eb85-d078-11f1-87a1-2e06e99bf6a4",
+            "type": "get",
+            "templated": false
+          },
+          "create-backup-aws-rds-resource": {
+            "href": "/backups/aws/rds-resources",
+            "type": "post",
+            "templated": false
+          },
+          "list-backup-aws-rds-resources": {
+            "href": "/backups/aws/rds-resources",
+            "type": "get",
+            "templated": false
+          },
+          "list-rds-restored-records": {
+            "href": "/restores/aws/rds-resources/records",
+            "type": "get",
+            "templated": false
+          },
+          "restore-aws-rds-resource": {
+            "href": "/restores/aws/rds-resources",
+            "type": "post",
+            "templated": false
+          }
+        }
+      },
+      {
+        "id": "ea388764-d071-11f1-8e4a-1aeee14fc2e6",
+        "type": "aws_rds_instance",
+        "environment_id": "33333333-3333-3333-3333-333333333333",
+        "is_encrypted": true,
+        "is_deleted": false,
+        "is_supported": true,
+        "protection_status": "protected",
+        "last_clumio_snapshot_timestamp": "2026-10-25T12:50:53Z",
+        "last_granular_backup_timestamp": null,
+        "first_clumio_snapshot_timestamp": "2026-10-25T12:50:53Z",
+        "first_granular_backup_timestamp": null,
+        "deletion_timestamp": null,
+        "protection_info": {
+          "policy_id": "cae81f60-5ca3-48eb-8fc2-accfc22d4830",
+          "inheriting_entity_id": null,
+          "inheriting_entity_type": null,
+          "rule_id": "021e44f6-e53d-47b8-b215-1f33d521c018"
+        },
+        "size": 21474836480,
+        "engine": "postgres",
+        "engine_version": "18.3",
+        "engine_mode": "provisioned",
+        "tags": [
+          {
+            "key": "exp",
+            "value": "amkcmk",
+            "id": "6abc4dc7-d067-11f1-aed6-123d2b1429ac",
+            "key_id": "6abac0d0-d067-11f1-aed6-123d2b1429ac"
+          }
+        ],
+        "earliest_aws_snapshot_restorable_timestamp": null,
+        "latest_aws_snapshot_restorable_timestamp": null,
+        "unsupported_reason": "",
+        "name": "amkcmk-rds-cmk",
+        "resource_native_id": "db-53B2Q6YCUMN3E4OWSFGMWMBPTU",
+        "account_native_id": "111111111111",
+        "aws_region": "ap-southeast-2",
+        "aws_azs": [
+          "ap-southeast-2a"
+        ],
+        "is_multi_az": false,
+        "kms_key_native_id": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+        "subnet_group_name": "default",
+        "security_group_native_ids": [
+          "sg-07374a4db8b066f44"
+        ],
+        "organizational_unit_id": "00000000-0000-0000-0000-000000000000",
+        "direct_assignment_policy_id": "",
+        "has_direct_assignment": false,
+        "backup_status_info": {
+          "backup_status": "unknown",
+          "last_successful_policy_start_timestamp": "2026-10-25T12:50:18Z",
+          "last_failed_policy_start_timestamp": "",
+          "operation_info_list": [
+            {
+              "operation": "aws_rds_resource_rolling_backup",
+              "backup_status": "unknown",
+              "last_successful_policy_start_timestamp": "2026-10-25T12:50:18Z",
+              "last_failed_policy_start_timestamp": ""
+            }
+          ]
+        },
+        "_links": {
+          "_self": {
+            "href": "/datasources/aws/rds-resources/ea388764-d071-11f1-8e4a-1aeee14fc2e6",
+            "type": "get",
+            "templated": false
+          },
+          "read-policy-definition": {
+            "href": "/policies/definitions/cae81f60-5ca3-48eb-8fc2-accfc22d4830",
+            "type": "get",
+            "templated": false
+          },
+          "read-policy-summary": {
+            "href": "/policies/definitions/cae81f60-5ca3-48eb-8fc2-accfc22d4830/summary",
+            "type": "get",
+            "templated": false
+          },
+          "create-backup-aws-rds-resource": {
+            "href": "/backups/aws/rds-resources",
+            "type": "post",
+            "templated": false
+          },
+          "list-backup-aws-rds-resources": {
+            "href": "/backups/aws/rds-resources",
+            "type": "get",
+            "templated": false
+          },
+          "list-rds-restored-records": {
+            "href": "/restores/aws/rds-resources/records",
+            "type": "get",
+            "templated": false
+          },
+          "restore-aws-rds-resource": {
+            "href": "/restores/aws/rds-resources",
+            "type": "post",
+            "templated": false
+          },
+          "read-policy-rule": {
+            "href": "/policies/rules/021e44f6-e53d-47b8-b215-1f33d521c018",
+            "type": "get",
+            "templated": false
+          }
+        }
+      },
+      {
+        "id": "41d20ac3-d078-11f1-87a1-2e06e99bf6a4",
+        "type": "aws_rds_instance",
+        "environment_id": "33333333-3333-3333-3333-333333333333",
+        "is_encrypted": true,
+        "is_deleted": false,
+        "is_supported": true,
+        "protection_status": "unprotected",
+        "last_clumio_snapshot_timestamp": null,
+        "last_granular_backup_timestamp": null,
+        "first_clumio_snapshot_timestamp": null,
+        "first_granular_backup_timestamp": null,
+        "deletion_timestamp": null,
+        "protection_info": null,
+        "size": 21474836480,
+        "engine": "postgres",
+        "engine_version": "18.3",
+        "engine_mode": "provisioned",
+        "tags": [
+          {
+            "key": "exp",
+            "value": "amkcmk",
+            "id": "6abc4dc7-d067-11f1-aed6-123d2b1429ac",
+            "key_id": "6abac0d0-d067-11f1-aed6-123d2b1429ac"
+          }
+        ],
+        "earliest_aws_snapshot_restorable_timestamp": null,
+        "latest_aws_snapshot_restorable_timestamp": null,
+        "unsupported_reason": "",
+        "name": "amkcmk-rds-cmk-r1",
+        "resource_native_id": "db-4UAN35JVVBDODH7WMHT2RVI3VU",
+        "account_native_id": "111111111111",
+        "aws_region": "ap-southeast-2",
+        "aws_azs": [
+          "ap-southeast-2b"
+        ],
+        "is_multi_az": false,
+        "kms_key_native_id": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422",
+        "subnet_group_name": "default",
+        "security_group_native_ids": [
+          "sg-07374a4db8b066f44"
+        ],
+        "organizational_unit_id": "00000000-0000-0000-0000-000000000000",
+        "direct_assignment_policy_id": "",
+        "has_direct_assignment": false,
+        "backup_status_info": {
+          "backup_status": "unknown",
+          "last_successful_policy_start_timestamp": "",
+          "last_failed_policy_start_timestamp": "",
+          "operation_info_list": null
+        },
+        "_links": {
+          "_self": {
+            "href": "/datasources/aws/rds-resources/41d20ac3-d078-11f1-87a1-2e06e99bf6a4",
+            "type": "get",
+            "templated": false
+          },
+          "create-backup-aws-rds-resource": {
+            "href": "/backups/aws/rds-resources",
+            "type": "post",
+            "templated": false
+          },
+          "list-backup-aws-rds-resources": {
+            "href": "/backups/aws/rds-resources",
+            "type": "get",
+            "templated": false
+          },
+          "list-rds-restored-records": {
+            "href": "/restores/aws/rds-resources/records",
+            "type": "get",
+            "templated": false
+          },
+          "restore-aws-rds-resource": {
+            "href": "/restores/aws/rds-resources",
+            "type": "post",
+            "templated": false
+          }
+        }
+      }
+    ]
+  }
+}

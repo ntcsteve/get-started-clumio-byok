@@ -1,0 +1,6 @@
+e2c  UTC 20261025T120423Z  account 111111111111  source ap-southeast-2 -> target ap-southeast-1  restore task 4043685609: completed (waited 200s)
+amk.txt restored: MATCH (bb5ee03ae95c3d329fe9504cd9fc3c990ee50e6eaeaf43d3d43e990834da015e)
+amk.txt restored copy is encrypted with: AES256, key manager: none
+cmk.txt restored: MATCH (236e3aee5b173b81b203150915324512c57dff244565883353fb5a1e90c2c4cb)
+cmk.txt restored copy is encrypted with: AES256, key manager: none
+e2c: PASS

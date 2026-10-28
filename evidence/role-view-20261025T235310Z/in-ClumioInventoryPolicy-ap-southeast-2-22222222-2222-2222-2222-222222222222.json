@@ -1,0 +1,183 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": "backup:ListProtectedResources",
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "GetBackedUpResources"
+        },
+        {
+            "Action": "backup:ListBackupVaults",
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "GetAWSBackupVaults"
+        },
+        {
+            "Action": "backup:ListRecoveryPointsByBackupVault",
+            "Effect": "Allow",
+            "Resource": "arn:aws:backup:ap-southeast-2:111111111111:backup-vault:*",
+            "Sid": "GetAWSRecoveryPoints"
+        },
+        {
+            "Action": "backup:DescribeRecoveryPoint",
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "GetAWSRecoveryPointInfo"
+        },
+        {
+            "Action": "rds:DescribeDBClusters",
+            "Effect": "Allow",
+            "Resource": "arn:aws:rds:ap-southeast-2:111111111111:cluster:*",
+            "Sid": "DescribeRDSClusters"
+        },
+        {
+            "Action": [
+                "rds:DescribeDBClusterSnapshots",
+                "rds:DescribeDBClusterSnapshotAttributes"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:rds:*:222222222222:cluster-snapshot:*",
+                "arn:aws:rds:*:111111111111:cluster-snapshot:*"
+            ],
+            "Sid": "DescribeRDSClusterSnapshots"
+        },
+        {
+            "Action": "rds:DescribeDBInstances",
+            "Effect": "Allow",
+            "Resource": "arn:aws:rds:ap-southeast-2:111111111111:db:*",
+            "Sid": "DescribeRDSInstances"
+        },
+        {
+            "Action": "rds:DescribeDBInstanceAutomatedBackups",
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:rds:ap-southeast-2:111111111111:db:*",
+                "arn:aws:rds:ap-southeast-2:111111111111:auto-backup:*"
+            ],
+            "Sid": "DescribeRDSAutomatedBackups"
+        },
+        {
+            "Action": "rds:DescribeDBSnapshotAttributes",
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:rds:*:222222222222:snapshot:*",
+                "arn:aws:rds:*:111111111111:snapshot:*"
+            ],
+            "Sid": "DescribeRDSInstanceSnapshotAttributes"
+        },
+        {
+            "Action": "rds:DescribeDBSnapshots",
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:rds:*:222222222222:snapshot:*",
+                "arn:aws:rds:*:222222222222:db:*",
+                "arn:aws:rds:*:111111111111:snapshot:*",
+                "arn:aws:rds:*:111111111111:db:*"
+            ],
+            "Sid": "DescribeRDSInstanceSnapshots"
+        },
+        {
+            "Action": "rds:DescribeGlobalClusters",
+            "Effect": "Allow",
+            "Resource": "arn:aws:rds:ap-southeast-2:111111111111:global-cluster:*",
+            "Sid": "DescribeRDSGlobalClusters"
+        },
+        {
+            "Action": [
+                "rds:DescribeOptionGroups",
+                "rds:DescribeOptionGroupOptions"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:rds:*:111111111111:og:*",
+            "Sid": "DescribeRDSOptionGroups"
+        },
+        {
+            "Action": "rds:ListTagsForResource",
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:rds:ap-southeast-2:111111111111:db:*",
+                "arn:aws:rds:ap-southeast-2:111111111111:cluster:*"
+            ],
+            "Sid": "ListingRDSTags"
+        },
+        {
+            "Action": "cloudwatch:GetMetricStatistics",
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "CloudWatchMetricReadPermissions"
+        },
+        {
+            "Action": [
+                "s3:ListAllMyBuckets",
+                "s3:GetReplicationConfiguration",
+                "s3:GetMetricsConfiguration",
+                "s3:GetLifecycleConfiguration",
+                "s3:GetEncryptionConfiguration",
+                "s3:GetBucketVersioning",
+                "s3:GetBucketTagging",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketPolicy",
+                "s3:GetBucketObjectLockConfiguration",
+                "s3:GetBucketLogging",
+                "s3:GetBucketLocation",
+                "backup:ListProtectedResources"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:ResourceAccount": "111111111111"
+                }
+            },
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::*",
+            "Sid": "DescribeS3Resources"
+        },
+        {
+            "Action": "s3:GetMultiRegionAccessPoint",
+            "Condition": {
+                "StringEquals": {
+                    "s3:ResourceAccount": "111111111111"
+                }
+            },
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3::111111111111:accesspoint/*",
+            "Sid": "GetMultiRegionAccessPoint"
+        },
+        {
+            "Action": "s3:ListMultiRegionAccessPoints",
+            "Condition": {
+                "StringEquals": {
+                    "s3:ResourceAccount": "111111111111"
+                }
+            },
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "ListMultiRegionAccessPoints"
+        },
+        {
+            "Action": [
+                "s3:PutStorageLensConfigurationTagging",
+                "s3:PutStorageLensConfiguration",
+                "s3:ListStorageLensConfigurations",
+                "s3:GetStorageLensConfigurationTagging",
+                "s3:GetStorageLensConfiguration",
+                "s3:DeleteStorageLensConfiguration"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:ResourceAccount": "111111111111"
+                }
+            },
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:*:111111111111:storage-lens/clumio-storage-lens-*",
+            "Sid": "StorageLens"
+        },
+        {
+            "Action": "cloudwatch:GetMetricStatistics",
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "GetS3CloudwatchMetrics"
+        }
+    ]
+}

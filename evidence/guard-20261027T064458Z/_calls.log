@@ -1,0 +1,8 @@
+aws    exit=0  describe-key-hardened.json
+aws    exit=0  key-policy-hardened.json
+aws    exit=0  describe-key-denied.json
+aws    exit=0  key-policy-denied.json
+aws    exit=0  head-allowed.json
+aws    exit=0  head-denied.json
+aws    exit=0  cloudtrail-Decrypt.json
+clumio http=200  backups.json

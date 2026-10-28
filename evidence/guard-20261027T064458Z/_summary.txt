@@ -1,0 +1,13 @@
+UTC 2026-10-27T06:45:00Z  bucket amkcmk-s3-111111111111-ap-southeast-2
+allowed.txt is encrypted with key 615aab0f
+denied.txt is encrypted with key d4029cb7
+
+KMS Decrypt calls by Clumio's role on the two keys (last 30h; errorCode shows a refused call):
+  22:36:57 615aab0f hardened  SUCCESS
+
+Clumio backups of the group (newest first): start | backed up / failed / missing objects
+  2026-10-26T09:35 | 1 / 1 / 0
+  2026-10-26T00:20 | 4 / 0 / 0
+
+Calls that did not succeed:
+  none

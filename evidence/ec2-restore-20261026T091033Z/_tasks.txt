@@ -1,0 +1,2 @@
+amkcmk-ec2-amk 4047532853
+amkcmk-ec2-cmk 4047532898

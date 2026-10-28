@@ -1,0 +1,56 @@
+{
+    "Statement": [
+        {
+            "Action": [
+                "s3:PutObjectTagging",
+                "s3:PutObjectAcl",
+                "s3:PutObject",
+                "s3:DeleteObject",
+                "s3:AbortMultipartUpload"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:ResourceAccount": "111111111111"
+                }
+            },
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::*",
+            "Sid": "AllowS3PutForRestores"
+        },
+        {
+            "Action": [
+                "s3:ListBucketVersions",
+                "s3:GetObjectTagging",
+                "s3:GetObject",
+                "s3:GetBucketVersioning"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:ResourceAccount": "111111111111"
+                }
+            },
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::*",
+            "Sid": "AllowS3CheckRestoreTargets"
+        },
+        {
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetObject"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "s3:ResourceAccount": "222222222222"
+                }
+            },
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:s3:ap-southeast-2:222222222222:accesspoint/clumio-data*",
+                "arn:aws:s3:::clumio-s3-backup*/*",
+                "arn:aws:s3:::clumio-s3-backup*"
+            ],
+            "Sid": "AllowS3CopyFromClumio"
+        }
+    ],
+    "Version": "2012-10-17"
+}

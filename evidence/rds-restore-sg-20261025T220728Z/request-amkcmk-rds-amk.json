@@ -1,0 +1,24 @@
+{
+  "source": {
+    "backup": {
+      "backup_id": "e9d53670-d071-11f1-87a1-2e06e99bf6a4_2026-10-25T12:50:53Z_RdsRollingBackup_4043795459"
+    }
+  },
+  "target": {
+    "environment_id": "44444444-4444-4444-4444-444444444444",
+    "name": "amkcmk-rds-amk-sg1",
+    "instance_class": "db.t4g.micro",
+    "is_publicly_accessible": false,
+    "tags": [
+      {
+        "key": "exp",
+        "value": "amkcmk"
+      }
+    ],
+    "kms_key_native_id": "arn:aws:kms:ap-southeast-1:111111111111:key/e25b56b0-d9f8-47fa-8d4a-0ff848ad23b4",
+    "subnet_group_name": "amkcmk-subnets",
+    "security_group_native_ids": [
+      "sg-039d85769bf1d621e"
+    ]
+  }
+}

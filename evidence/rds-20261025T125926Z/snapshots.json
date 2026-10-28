@@ -1,0 +1,34 @@
+[
+    {
+        "Snapshot": "clumio-airgap-encrypted-t4043795459-org00000000000000000",
+        "Database": "amkcmk-rds-amk",
+        "Status": "available",
+        "Percent": 100,
+        "Encrypted": true,
+        "Key": "arn:aws:kms:ap-southeast-2:222222222222:key/32b305a5-864f-4ee0-96cd-6f7b2a1c8c8e"
+    },
+    {
+        "Snapshot": "clumio-airgap-encrypted-t4043795565-org00000000000000000",
+        "Database": "amkcmk-rds-cmk",
+        "Status": "available",
+        "Percent": 100,
+        "Encrypted": true,
+        "Key": "arn:aws:kms:ap-southeast-2:222222222222:key/32b305a5-864f-4ee0-96cd-6f7b2a1c8c8e"
+    },
+    {
+        "Snapshot": "clumio-airgap-to-encrypt-t4043795459-org00000000000000000",
+        "Database": "amkcmk-rds-amk",
+        "Status": "available",
+        "Percent": 100,
+        "Encrypted": true,
+        "Key": "arn:aws:kms:ap-southeast-2:111111111111:key/f07e156d-3471-465a-ad6c-95a5159fc4e7"
+    },
+    {
+        "Snapshot": "clumio-airgap-to-encrypt-t4043795565-org00000000000000000",
+        "Database": "amkcmk-rds-cmk",
+        "Status": "available",
+        "Percent": 100,
+        "Encrypted": true,
+        "Key": "arn:aws:kms:ap-southeast-2:111111111111:key/c303ff3d-1ef3-46f6-ad72-913747686422"
+    }
+]

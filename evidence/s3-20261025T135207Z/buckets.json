@@ -1,0 +1,216 @@
+{
+  "current_count": 2,
+  "limit": 100,
+  "start": "1",
+  "total_count": 2,
+  "total_pages_count": 1,
+  "_links": {
+    "_self": {
+      "href": "/datasources/aws/s3-buckets?filter=%7B%22account_native_id%22:%7B%22$eq%22:%22111111111111%22%7D%7D&limit=200",
+      "type": "get",
+      "templated": false
+    },
+    "_first": {
+      "href": "/datasources/aws/s3-buckets?filter=%7B%22account_native_id%22%3A%7B%22%24eq%22%3A%22111111111111%22%7D%7D&limit=200&start=1",
+      "type": "get",
+      "templated": false
+    },
+    "_last": {
+      "href": "/datasources/aws/s3-buckets?filter=%7B%22account_native_id%22%3A%7B%22%24eq%22%3A%22111111111111%22%7D%7D&limit=200&start=1",
+      "type": "get",
+      "templated": false
+    }
+  },
+  "_embedded": {
+    "items": [
+      {
+        "id": "27103b64-d06c-11f1-93ce-a63aa733da62",
+        "name": "amkcmk-restore-111111111111-ap-southeast-1",
+        "environment_id": "44444444-4444-4444-4444-444444444444",
+        "account_native_id": "111111111111",
+        "aws_region": "ap-southeast-1",
+        "creation_timestamp": "2026-10-25T12:03:29Z",
+        "tags": [
+          {
+            "key": "exp",
+            "value": "amkcmk",
+            "id": "2714587f-d06c-11f1-93ce-a63aa733da62",
+            "key_id": "27122d92-d06c-11f1-93ce-a63aa733da62"
+          }
+        ],
+        "encryption_setting": {
+          "server_side_encryption_configuration": {
+            "rules": [
+              {
+                "bucket_key_enabled": false,
+                "apply_server_side_encryption_by_default": {
+                  "sse_algorithm": "AES256",
+                  "kms_master_key_id": null
+                }
+              }
+            ]
+          }
+        },
+        "replication_setting": {
+          "replication_configuration": null
+        },
+        "versioning_setting": {
+          "mfa_delete": "",
+          "status": ""
+        },
+        "object_lock_setting": {
+          "object_lock_configuration": null
+        },
+        "organizational_unit_id": "00000000-0000-0000-0000-000000000000",
+        "protection_group_count": 0,
+        "size_bytes": 0,
+        "object_count": 0,
+        "cloudwatch_metrics": {
+          "size_bytes": null,
+          "object_count": null,
+          "size_bytes_per_storage_class": null,
+          "size_bytes_retrieved_time": null,
+          "object_count_retrieved_time": null,
+          "average_object_size_bytes": null,
+          "average_object_size_bytes_time": null
+        },
+        "bucket_size_bytes_breakdown": {
+          "standard_storage_bytes": 0,
+          "intelligent_tiering_storage_bytes": 0,
+          "standard_ia_storage_bytes": 0,
+          "one_zone_ia_storage_bytes": 0,
+          "glacier_instant_retrieval_storage_bytes": 0,
+          "glacier_flexible_retrieval_storage_bytes": 0,
+          "glacier_deep_archive_storage_bytes": 0,
+          "reduced_redundancy_storage_bytes": 0
+        },
+        "versioning_type": "none",
+        "replication_type": "none",
+        "encryption_type": "AES256",
+        "object_lock_type": "none",
+        "last_backup_timestamp": null,
+        "last_continuous_backup_timestamp": null,
+        "last_backtrack_sync_timestamp": null,
+        "unsupported_reason": "",
+        "has_ongoing_continuous_backup": false,
+        "clumio_roles": null,
+        "_links": {
+          "_self": {
+            "href": "/datasources/aws/s3-buckets/27103b64-d06c-11f1-93ce-a63aa733da62",
+            "type": "get",
+            "templated": false
+          },
+          "list-backup-protection-group-buckets": {
+            "href": "/backups/protection-groups/buckets",
+            "type": "get",
+            "templated": false
+          },
+          "restore-protection-group-s3-asset": {
+            "href": "/restores/protection-groups/s3-assets",
+            "type": "post",
+            "templated": false
+          },
+          "add-bucket-protection-group": {
+            "href": "/protection-groups/{group_id}/buckets",
+            "type": "post",
+            "templated": true
+          }
+        }
+      },
+      {
+        "id": "6ab8d50f-d067-11f1-aed6-123d2b1429ac",
+        "name": "amkcmk-s3-111111111111-ap-southeast-2",
+        "environment_id": "33333333-3333-3333-3333-333333333333",
+        "account_native_id": "111111111111",
+        "aws_region": "ap-southeast-2",
+        "creation_timestamp": "2026-10-25T11:29:35Z",
+        "tags": [
+          {
+            "key": "exp",
+            "value": "amkcmk",
+            "id": "6abc4dc7-d067-11f1-aed6-123d2b1429ac",
+            "key_id": "6abac0d0-d067-11f1-aed6-123d2b1429ac"
+          }
+        ],
+        "encryption_setting": {
+          "server_side_encryption_configuration": {
+            "rules": [
+              {
+                "bucket_key_enabled": false,
+                "apply_server_side_encryption_by_default": {
+                  "sse_algorithm": "AES256",
+                  "kms_master_key_id": null
+                }
+              }
+            ]
+          }
+        },
+        "replication_setting": {
+          "replication_configuration": null
+        },
+        "versioning_setting": {
+          "mfa_delete": "",
+          "status": "Enabled"
+        },
+        "object_lock_setting": {
+          "object_lock_configuration": null
+        },
+        "organizational_unit_id": "00000000-0000-0000-0000-000000000000",
+        "protection_group_count": 1,
+        "size_bytes": 0,
+        "object_count": 0,
+        "cloudwatch_metrics": {
+          "size_bytes": null,
+          "object_count": null,
+          "size_bytes_per_storage_class": null,
+          "size_bytes_retrieved_time": null,
+          "object_count_retrieved_time": null,
+          "average_object_size_bytes": null,
+          "average_object_size_bytes_time": null
+        },
+        "bucket_size_bytes_breakdown": {
+          "standard_storage_bytes": 0,
+          "intelligent_tiering_storage_bytes": 0,
+          "standard_ia_storage_bytes": 0,
+          "one_zone_ia_storage_bytes": 0,
+          "glacier_instant_retrieval_storage_bytes": 0,
+          "glacier_flexible_retrieval_storage_bytes": 0,
+          "glacier_deep_archive_storage_bytes": 0,
+          "reduced_redundancy_storage_bytes": 0
+        },
+        "versioning_type": "non_mfa_delete",
+        "replication_type": "none",
+        "encryption_type": "AES256",
+        "object_lock_type": "none",
+        "last_backup_timestamp": "2026-10-25T11:35:00Z",
+        "last_continuous_backup_timestamp": null,
+        "last_backtrack_sync_timestamp": "2026-10-25T11:35:00Z",
+        "unsupported_reason": "",
+        "has_ongoing_continuous_backup": false,
+        "clumio_roles": null,
+        "_links": {
+          "_self": {
+            "href": "/datasources/aws/s3-buckets/6ab8d50f-d067-11f1-aed6-123d2b1429ac",
+            "type": "get",
+            "templated": false
+          },
+          "list-backup-protection-group-buckets": {
+            "href": "/backups/protection-groups/buckets",
+            "type": "get",
+            "templated": false
+          },
+          "restore-protection-group-s3-asset": {
+            "href": "/restores/protection-groups/s3-assets",
+            "type": "post",
+            "templated": false
+          },
+          "add-bucket-protection-group": {
+            "href": "/protection-groups/{group_id}/buckets",
+            "type": "post",
+            "templated": true
+          }
+        }
+      }
+    ]
+  }
+}

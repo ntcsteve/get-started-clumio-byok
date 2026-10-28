@@ -1,0 +1,1 @@
+Added after the script run: Clumio's own list of the one object it failed to back up in backup 2026-10-26T09:35:00Z (the file behind skipped_objects_list_link, fetched with the Clumio token; the signed link itself is not saved).
